@@ -19,12 +19,12 @@
 / {
 
         behaviors {
-        td23: tap_dance_23 {
+        td: tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_23";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp APOS>, <&kp DQT>;
+            label = "TAP_DANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -39,7 +39,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB      &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U      &kp Y    &kp DEL    &kp BSPC
-   &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E      &kp I    &kp O      &td23
+   &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E      &kp I    &kp O      &td SQT DQT
    &kp LSHFT    &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
                                       &kp LGUI        &mo 1            &kp ENTER            &kp SPACE   &mo 2   &kp RALT
                         >;
