@@ -35,9 +35,23 @@
         
         combo_ent { 
             timeout-ms = <50>;
-            key-positions = <7 8 9>;
+            key-positions = <22 23>;
             bindings = <&kp ENTER>;
             };
+        
+        combo_dash { 
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp MINUS>;
+            };
+
+        combo_uscore { 
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp UNDER>;
+            };
+
+                    
         };
 
         behaviors {
@@ -55,28 +69,28 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB      &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U      &kp Y    &kp DEL    &kp BSPC
-   &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E      &kp I    &kp O      &td23
+   &kp TAB      &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
+   &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
    &kp LSHFT    &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp RSHFT
-                                      &kp LGUI        &mo 1            &kp ENTER            &kp SPACE   &mo 2   &kp RALT
+                                            &kp LGUI        &mo 1            &kp ENTER            &kp SPACE   &mo 2   &kp RALT
                         >;
                 };
 
                 lower_layer {
                         bindings = <
-   &kp GRAVE  &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5   &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9   &mt RPAR N0 &kp PRINTSCREEN
-   &trans     &none        &none        &none        &none        &none          &none          &none         &none       &none     &kp UP      &none
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans         &trans        &trans      &mt HOME LEFT  &kp DOWN  &mt END RIGHT
-                          	        &trans     &trans       &trans         &trans   &trans   &trans
+   &kp TAB    &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5          &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9    &mt RPAR N0 &kp PRINTSCREEN
+   &trans     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                &none          &none         &none       &none          &kp UP      &kp PAUSE_BREAK
+   &kp LSHFT  &kp F6       &kp F7       &kp F8       &mt F10 F9   &mt F12 F11           &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
+                          	          &trans     &trans       &trans                &trans   &trans   &trans
                         >;
                 };
 
                 raise_layer {
                         bindings = <
-   &kp GRAVE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL  &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP   &trans   &trans    &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT  &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	    &trans     &trans       &trans         &trans   &trans   &trans
+   &kp GRAVE  &kp EXCL     &kp AT       &kp HASH       &kp DLLR  &kp PRCNT              &kp CARET &kp AMPS   &kp KP_MULTIPLY   &kp LPAR   &kp RPAR    &kp BSPC
+   &kp LCTRL  &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP   &trans    &trans                 &kp MINUS &kp EQUAL  &kp LBKT          &kp RBKT   &kp BSLH    &kp GRAVE
+   &kp LSHFT  &trans       &trans       &trans         &trans    &trans                 &kp UNDER &kp PLUS   &kp LBRC          &kp RBRC   &kp PIPE    &kp TILDE
+                    	                 &trans     &trans       &trans                 &trans   &trans   &trans
                         >;
                 };
 
