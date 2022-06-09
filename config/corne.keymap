@@ -13,7 +13,10 @@
     tapping-term-ms = <400>;
 };
 
-
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
 
 
 / {
@@ -34,31 +37,31 @@
             };                
         
         combo_ent { 
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <20 21>;
             bindings = <&kp ENTER>;
             };
         
         combo_dash { 
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <19 20>;
             bindings = <&kp MINUS>;
             };
 
         combo_uscore { 
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <31 32>;
             bindings = <&kp UNDER>;
             };
 
         combo_f5 { 
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <3 4>;
             bindings = <&kp F5>;
             };
 
         combo_prntscr { 
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <9 10>;
             bindings = <&kp PRINTSCREEN>;
             };
@@ -83,8 +86,8 @@
                         bindings = <
    &kp TAB      &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
    &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
-   &kp LSHFT    &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
-                                            &kp LGUI        &mo 1            &kp LSHIFT           &kp SPACE   &mo 2   &kp RALT
+   &tog 1    &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
+                                            &kp LGUI        &mo 1            &sk LSHIFT           &mt RSHFT SPACE   &mo 2   &kp RALT
                         >;
                 };
 
@@ -92,7 +95,7 @@
                         bindings = <
    &kp TAB    &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5          &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9    &mt RPAR N0 &kp BACKSPACE
    &trans     &none        &none        &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp UP      &kp PAUSE_BREAK
-   &kp LSHFT  &none        &none        &none        &none        &none                 &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
+   &trans  &none        &none        &none        &none        &none                 &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
                           	          &trans     &trans       &trans                &trans   &trans   &trans
                         >;
                 };
