@@ -91,6 +91,7 @@
         qumac: behavior_macro_1 {
 		compatible = "zmk,behavior-macro";
 		label = "qumacro";
+                tap-ms = <5>;
 		#binding-cells = <0>;
 		bindings = <&kp Q &kp U>;
                 };
