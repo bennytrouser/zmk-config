@@ -88,13 +88,24 @@
                 bindings = <&kp>, <&kp>;
                 };
 
-        qumac: behavior_macro_1 {
+        qumac: qu_macro {
 		compatible = "zmk,behavior-macro";
 		label = "qumacro";
-                tap-ms = <5>;
+                tap-ms = <0>;
 		#binding-cells = <0>;
 		bindings = <&kp Q &kp U>;
                 };
+
+        mtmac: mt_macro {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MACRO_HOLDTAP";
+                flavor = "tap-preferred";
+                #binding-cells = <2>;    
+                tapping-term-ms = <200>;
+                bindings = <&kp>, <&qumac>;
+                };
+
+        
         };
 
         keymap {
@@ -102,7 +113,7 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB      &qumac        &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
+   &kp TAB      &mtmac Q 0        &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
    &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
    &tog 1       &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
                                             &kp LGUI        &mo 1            &sk LSHIFT           &mtrsh RSHFT SPACE   &mo 2   &kp RALT
