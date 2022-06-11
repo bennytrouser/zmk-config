@@ -92,6 +92,7 @@
 		compatible = "zmk,behavior-macro";
 		label = "qumacro";
                 tap-ms = <0>;
+                wait-ms = <0>;
 		#binding-cells = <0>;
 		bindings = <&kp Q &kp U>;
                 };
@@ -113,7 +114,7 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB      &mtmac Q 0        &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
+   &kp TAB      &mtmac Q 0    &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
    &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
    &tog 1       &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
                                             &kp LGUI        &mo 1            &sk LSHIFT           &mtrsh RSHFT SPACE   &mo 2   &kp RALT
@@ -124,7 +125,7 @@
                         bindings = <
    &kp TAB    &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5          &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9    &mt RPAR N0 &kp BACKSPACE
    &trans     &none        &none        &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp UP      &kp PAUSE_BREAK
-   &trans     &trans       &trans       &trans        &trans       &trans                 &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
+   &trans     &trans       &trans       &trans       &trans       &trans                &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
                           	          &trans     &trans       &trans                &trans   &trans   &trans
                         >;
                 };
@@ -141,7 +142,7 @@
                 bt_layer {
                         bindings = <
    &kp F1   &kp F2        &kp F3        &kp F4        &kp F5       &kp F6                &kp F7  &kp F8  &kp F9  &kp F10   &kp F11   &kp F12
-   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4          &none   &kp Q(U)   &none   &none     &none     &none
+   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4          &none   &none   &none   &none     &none     &none
    &none    &none         &none         &none         &none        &none                 &none   &none   &none   &none     &none     &none
                       &trans     &trans       &trans         &trans   &trans   &bt BT_CLR
                         
