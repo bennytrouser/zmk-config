@@ -92,7 +92,7 @@
 		compatible = "zmk,behavior-macro";
 		label = "bgmacro";
 		#binding-cells = <0>;
-		bindings = <&kp>, <&kp>;
+		bindings = <&kp &kp>;
         };
         };
 
