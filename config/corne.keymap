@@ -88,12 +88,12 @@
                 bindings = <&kp>, <&kp>;
                 };
 
-        bgrmac: behavior_macro_1 {
+        qumac: behavior_macro_1 {
 		compatible = "zmk,behavior-macro";
-		label = "bgmacro";
+		label = "qumacro";
 		#binding-cells = <0>;
-		bindings = <&kp &kp>;
-        };
+		bindings = <&kp Q &kp U>;
+                };
         };
 
         keymap {
@@ -101,7 +101,7 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB      &bgrmac Q U   &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
+   &kp TAB      &qumac        &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
    &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
    &tog 1       &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
                                             &kp LGUI        &mo 1            &sk LSHIFT           &mtrsh RSHFT SPACE   &mo 2   &kp RALT
