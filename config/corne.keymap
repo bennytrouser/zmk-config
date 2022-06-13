@@ -67,6 +67,12 @@
             bindings = <&kp PRINTSCREEN>;
             };
 
+        combo_mtgap {
+            timeout-ms = <20>;
+            key-positions = <34 35>;
+            bindings = <&tog 4>;
+        };
+
                     
         };
 
@@ -148,5 +154,17 @@
                         
                         >;      
                 };
+
+                mtgap_layer {
+                        bindings = <
+   &kp TAB  &kp Y   &kp P   &kp O      &kp U   &kp J              &kp K  &kp D  &kp L  &kp C   &kp W   &kp BSPC
+   &trans   &kp I   &kp N   &kp E      &kp A   &kp COMMA          &kp M  &kp H  &kp T  &kp S   &kp R   &kp APOS
+   &none    &kp Q   &kp Z   &kp QMARK  &kp DOT &kp SEMI           &kp B  &kp F  &kp G  &kp V   &kp X   &kp DOWN
+                      &trans     &trans       &trans              &trans   &trans   &trans
+                        
+                        >;      
+                };
+        
+
         };
 };
