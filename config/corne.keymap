@@ -67,11 +67,11 @@
             bindings = <&kp PRINTSCREEN>;
             };
 
-        combo_mtgap {
+        combo_tab {
             timeout-ms = <20>;
-            key-positions = <34 35>;
-            bindings = <&tog 4>;
-        };
+            key-positions = <14 15>;
+            bindings = <&kp TAB>;        
+            };
 
                     
         };
@@ -120,9 +120,9 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB      &mtmac Q 0    &kp W         &kp F           &kp P            &kp B                &kp J   &kp L      &kp U           &kp Y          &kp DEL    &kp BSPC
-   &kp LCTRL    &kp A         &kp R         &kp S           &kp T            &kp G                &kp M   &kp N      &kp E           &kp I          &kp O      &td23
-   &tog 1       &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H      &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
+   &kp TAB      &mtmac Q 0    &kp W         &kp F           &kp P            &kp B                &kp J   &kp L         &kp U           &kp Y          &kp DEL    &kp BSPC
+   &kp LCTRL    &mt LC(A) A   &kp R         &kp S           &kp T            &kp G                &kp M   &mt LCTRL N   &kp E           &kp I          &kp O      &td23
+   &tog 1       &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C     &mt LC(V) D      &kp V                &kp K   &kp H         &mt SEMI COMMA  &mt COLON DOT  &kp FSLH   &kp DOWN
                                             &kp LGUI        &mo 1            &sk LSHIFT           &mtrsh RSHFT SPACE   &mo 2   &kp RALT
                         >;
                 };
@@ -130,7 +130,7 @@
                 lower_layer {
                         bindings = <
    &kp TAB    &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5          &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9    &mt RPAR N0 &kp BACKSPACE
-   &trans     &none        &none        &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp UP      &kp PAUSE_BREAK
+   &trans     &none        &none        &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp HOME    &kp END
    &trans     &trans       &trans       &trans       &trans       &trans                &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
                           	          &trans     &trans       &trans                &trans   &trans   &trans
                         >;
@@ -139,8 +139,8 @@
                 raise_layer {
                         bindings = <
    &kp GRAVE  &kp EXCL     &kp AT       &kp HASH       &kp DLLR  &kp PRCNT              &kp CARET &kp AMPS   &kp KP_MULTIPLY   &kp LPAR   &kp RPAR    &kp BSPC
-   &kp LCTRL  &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP   &trans    &trans                 &kp MINUS &kp EQUAL  &kp LBKT          &kp RBKT   &kp BSLH    &kp GRAVE
-   &kp LSHFT  &trans       &trans       &trans         &trans    &trans                 &kp UNDER &kp PLUS   &kp LBRC          &kp RBRC   &kp PIPE    &kp TILDE
+   &kp LCTRL  &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP   &kp B    &trans                 &kp MINUS &kp EQUAL  &kp LBKT          &kp RBKT   &kp BSLH    &kp GRAVE
+   &kp LSHFT  &trans       &trans       &trans         &kp V    &trans                 &kp UNDER &kp PLUS   &kp LBRC          &kp RBRC   &kp PIPE    &kp TILDE
                     	                 &trans     &trans       &trans                 &trans   &trans   &trans
                         >;
                 };
@@ -148,19 +148,9 @@
                 bt_layer {
                         bindings = <
    &kp F1   &kp F2        &kp F3        &kp F4        &kp F5       &kp F6                &kp F7  &kp F8  &kp F9  &kp F10   &kp F11   &kp F12
-   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4          &none   &none   &none   &none     &none     &none
+   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4          &none   &kp LC(FSLH)   &none   &none     &none     &none
    &none    &none         &none         &none         &none        &none                 &none   &none   &none   &none     &none     &none
-                      &trans     &trans       &trans         &trans   &trans   &bt BT_CLR
-                        
-                        >;      
-                };
-
-                mtgap_layer {
-                        bindings = <
-   &kp TAB  &kp Y   &kp P   &kp O      &kp U   &kp J              &kp K  &kp D  &kp L  &kp C   &kp W   &kp BSPC
-   &trans   &kp I   &kp N   &kp E      &kp A   &kp COMMA          &kp M  &kp H  &kp T  &kp S   &kp R   &kp APOS
-   &none    &kp Q   &kp Z   &kp QMARK  &kp DOT &kp SEMI           &kp B  &kp F  &kp G  &kp V   &kp X   &kp DOWN
-                      &trans     &trans       &trans              &trans   &trans   &trans
+                      &trans     &trans       &trans         &trans   &trans   &trans
                         
                         >;      
                 };
