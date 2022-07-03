@@ -55,10 +55,22 @@
             bindings = <&kp UNDER>;
             };
 
-        combo_f5 { 
+        combo_V { 
             timeout-ms = <20>;
-            key-positions = <3 4>;
-            bindings = <&kp F5>;
+            key-positions = <15 28>;
+            bindings = <&kp B>;
+            };
+
+        combo_B { 
+            timeout-ms = <20>;
+            key-positions = <15 16>;
+            bindings = <&kp B>;
+            };
+
+        combo_K { 
+            timeout-ms = <20>;
+            key-positions = <19 30>;
+            bindings = <&kp B>;
             };
 
         combo_prntscr { 
