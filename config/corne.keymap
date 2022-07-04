@@ -58,7 +58,7 @@
         combo_V { 
             timeout-ms = <20>;
             key-positions = <15 28>;
-            bindings = <&kp B>;
+            bindings = <&kp V>;
             };
 
         combo_B { 
@@ -69,8 +69,8 @@
 
         combo_K { 
             timeout-ms = <20>;
-            key-positions = <19 30>;
-            bindings = <&kp B>;
+            key-positions = <20 31>;
+            bindings = <&kp K>;
             };
 
         combo_prntscr { 
