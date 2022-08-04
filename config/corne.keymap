@@ -142,7 +142,7 @@
                 lower_layer {
                         bindings = <
    &kp TAB    &mt EXCL N1  &mt AT N2    &mt HASH N3  &mt DLLR N4  &mt PRCNT N5          &mt CARET N6   &mt AMPS N7   &mt STAR N8 &mt LPAR N9    &mt RPAR N0 &kp BACKSPACE
-   &trans     &none        &none        &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp HOME    &kp END
+   &trans     &none        &kp RALT     &kp LSHFT    &kp LCTRL    &none                 &kp LEFT       &kp DOWN      &kp UP      &kp RIGHT      &kp HOME    &kp END
    &trans     &trans       &trans       &trans       &trans       &trans                &none          &none         &none       &mt HOME LEFT  &kp DOWN    &mt END RIGHT
                           	          &trans     &trans       &trans                &trans   &trans   &trans
                         >;
