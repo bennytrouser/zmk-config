@@ -163,23 +163,25 @@
 
                 default_layer {
                         bindings = <
-   &kp Q         &kp W         &kp F           &kp P            &kp B                   &kp J          &kp L         &kp U              &kp Y          &kp BACKSPACE   
-   &mt LC(A) A   &kp R         &kp S           &kp T                                    &kp M          &mt LCTRL N   &kp E              &kp I          &kp O      &td23
-   &mt UNDO Z    &mt CUT X     &mt COPY C      &mt PASTE D      &kp V                   &kp K          &kp H         &mt SEMI COMMA     &mt COLON DOT  &kp FSLH
-                                               &mo 1            &sk LSHIFT              &mtrsh RSHFT SPACE    &mo 2
+   &kp Q         &kp W         &kp F           &kp P                                                   &kp L         &kp U              &kp Y          &kp BACKSPACE   
+   &mt LC(A) A   &kp R         &kp S           &kp T            &kp B                   &kp J          &mt LCTRL N   &kp E              &kp I          &kp O      
+   &mt UNDO Z    &mt CUT X     &mt COPY C      &mt PASTE D      &kp G                   &kp M          &kp H         &mt SEMI COMMA     &mt COLON DOT  &kp FSLH
+                                               &mo NAV_L        &sk LSHIFT              &mtrsh RSHFT SPACE    &mo SYM_L
                         >;
                 };
 
-                lower_layer {
+                nav_layer {
+                        label = "Nav";
                         bindings = <
-   &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4      &mt PRCNT N5            &mt CARET N6  &mt AMPS N7   &mt STAR N8         &mt LPAR N9    &mt RPAR N0 
-   &none        &kp RALT       &kp LSHFT       &kp LCTRL        &none                   &kp LEFT      &kp DOWN      &kp UP              &kp RIGHT      &kp HOME
+   &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4                                            &mt AMPS N7   &mt STAR N8         &mt LPAR N9    &mt RPAR N0 
+   &none        &kp RALT       &kp LSHFT       &kp LCTRL        &none                   &kp LEFT      &kp DOWN      &kp UP              &kp RIGHT      &td23
    &trans       &trans         &trans          &trans           &trans                  &none         &none         &none               &none          &none
                           	               &trans           &trans                  &trans        &trans
                         >;
                 };
 
-                raise_layer {
+                sym_layer {
+                        label = "Sym";
                         bindings = <
    &kp EXCL     &kp AT         &kp HASH        &kp DLLR         &kp PRCNT               &kp CARET     &kp AMPS      &kp KP_MULTIPLY     &kp LPAR       &kp RPAR
    &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp B            &trans                  &kp MINUS     &kp EQUAL     &kp LBKT            &kp RBKT       &kp BSLH
