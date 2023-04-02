@@ -59,7 +59,7 @@
         // prntscr { timeout-ms = <20>; key-positions = <9 10>; bindings = <&kp PRINTSCREEN>; };
 
         /* Symbols */
-        combo_dash { timeout-ms = <20>; key-positions = <15 16>; bindings = <&kp MINUS>; layers = <DEF_L>; };
+        combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
 
         // combo_uscore { 
         //     timeout-ms = <20>;
@@ -71,11 +71,6 @@
         /* Letters */
         V { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp V>; layers = <DEF_L>; };
         K { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp K>; layers = <DEF_L>; };
-
-
-
-
-
                     
         };
 
@@ -106,54 +101,75 @@
                 bindings = <&mo>, <&kp>;
                 };
 
-        
-        
-        
-        };
+        /* Mod Morphs */
+        bspc_del: backspace_delete {
+                compatible = "zmk,behavior-mod-morph";
+                label = "BACKSPACE_DELETE";
+                #binding-cells = <0>;
+                bindings = <&kp BACKSPACE>, <&kp DELETE>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+                keep-mods = <(MOD_RSFT)>;
+                };
 
+        comma_semi: comma_semi {
+                compatible = "zmk,behavior-mod-morph";
+                label = "COMMA_SEMI";
+                #binding-cells = <0>;
+                bindings = <&kp COMMA>, <&kp SEMI>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
 
+        dot_colon: dot_colon {
+                compatible = "zmk,behavior-mod-morph";
+                label = "DOT_COLON";
+                #binding-cells = <0>;
+                bindings = <&kp DOT>, <&kp COLON>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+    };
 
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        bindings = <
-                                &kp Q         &kp W         &kp F           &kp P            &kp B                   &kp J          &kp L         &kp U             &kp Y          &kp BACKSPACE   
-                                &mt LC(A) A   &kp R         &kp S           &kp T            &kp G                   &kp M          &mt LCTRL N   &kp E             &kp I          &kp O      
-                                &mt UNDO Z    &mt CUT X     &mt COPY C      &mt PASTE D                                             &kp H         &mt SEMI COMMA    &mt COLON DOT  &kp FSLH
-                                                                            &mo NAV_L        &sk LSHIFT              &mtrsh RSHFT SPACE    &mo SYM_L
-                        >;
+                bindings = <
+                        &kp Q         &kp W         &kp F           &kp P            &kp B                   &kp J          &kp L         &kp U          &kp Y        &bspc_del   
+                        &mt LC(A) A   &kp R         &kp S           &kp T            &kp G                   &kp M          &mt LCTRL N   &kp E          &kp I        &kp O      
+                        &mt UNDO Z    &mt CUT X     &mt COPY C      &mt PASTE D                                             &kp H         &comma_semi    &dot_colon   &kp FSLH
+                                                                    &mo NAV_L        &sk LSHIFT              &mtrsh RSHFT SPACE    &mo SYM_L
+                >;
                 };
 
                 nav_layer {
-                        label = "Nav";
-                        bindings = <
-                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4      &none                   &kp LEFT     &kp HOME      &kp END            &kp PRINTSCREEN  &kp DEL 
-                                &none        &kp RALT       &kp LSHFT       &kp LCTRL        &none                   &kp CLONED   &kp DOWN      &kp UP             &kp RIGHT        &td23
-                                &trans       &trans         &trans          &trans                                                &kp REML      &none              &none            &none
-                                                                            &trans           &trans                  &trans       &trans
-                        >;
+                label = "Nav";
+                bindings = <
+                        &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4      &none                   &kp REML     &kp HOME      &kp END            &kp PRINTSCREEN  &trans 
+                        &none        &kp RALT       &kp LSHFT       &kp LCTRL        &none                   &kp LEFT     &kp DOWN      &kp UP             &kp RIGHT        &td23
+                        &trans       &trans         &trans          &trans                                                &kp CLONED    &none              &none            &none
+                                                                        &trans           &trans                  &trans       &trans
+                >;
                 };
 
                 sym_layer {
-                        label = "Sym";
-                        bindings = <
-                                &kp EXCL     &kp AT         &kp HASH        &kp DLLR         &kp PRCNT               &kp MINUS     &kp AMPS      &kp KP_MULTIPLY     &kp LPAR       &kp RPAR
-                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE        &kp GRAVE               &kp UNDER     &kp EQUAL     &kp LBKT            &kp RBKT       &kp BSLH
-                                &trans       &trans         &trans          &none                                                  &kp PLUS      &kp LBRC            &kp RBRC       &kp PIPE
-                                                                            &trans           &trans                  &trans        &trans
-                        >;
+                label = "Sym";
+                bindings = <
+                        &kp EXCL     &kp AT         &kp HASH        &kp DLLR         &kp PRCNT               &kp MINUS     &kp AMPS      &kp KP_MULTIPLY     &kp LPAR       &kp RPAR
+                        &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE        &kp GRAVE               &kp UNDER     &kp EQUAL     &kp LBKT            &kp RBKT       &kp PIPE
+                        &trans       &trans         &trans          &none                                                  &kp PLUS      &kp LBRC            &kp RBRC       &kp BSLH
+                                                                        &trans           &trans                  &trans        &trans
+                >;
                 };
 
                 num_layer {
-                        lablel = "Num"
-                        bindings = <
-                                &none         &none         &none           &none            &none                   &kp KP_N0     &kp KP_N1     &kp KP_N2           &kp KP_N3      &none     
-                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &none                   &none         &kp KP_N4     &kp KP_N5           &kp KP_N6      &none
-                                &none         &none         &none           &none                                                  &kp KP_N7     &kp KP_N8           &kp KP_N9      &none
-                                                                            &trans           &trans                  &trans        &trans
-                        
-                        >;      
+                lablel = "Num"
+                bindings = <
+                        &none         &none         &none           &none            &none                   &kp KP_N0     &kp KP_N1     &kp KP_N2           &kp KP_N3      &none     
+                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &none                   &none         &kp KP_N4     &kp KP_N5           &kp KP_N6      &none
+                        &none         &none         &none           &none                                                  &kp KP_N7     &kp KP_N8           &kp KP_N9      &none
+                                                                        &trans           &trans                  &trans        &trans
+                
+                >;      
                 };
         
 
