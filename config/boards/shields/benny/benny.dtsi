@@ -23,10 +23,10 @@
 			                           RC(0,14) RC(0,15)	    RC(0,30)  RC(0,31)
 		>;
 	};
-	// &kscan0: kscan {
-	// compatible = "zmk,kscan-gpio-direct";
-	// label = "KSCAN";
-	// };
+	&kscan0: kscan {
+	compatible = "zmk,kscan-gpio-direct";
+	label = "KSCAN";
+	};
 	// /omit-if-no-ref/ kscan_faceup: kscan_0 {
 	// 	compatible = "zmk,kscan-gpio-direct";
 	// 	label = "KSCAN0";
