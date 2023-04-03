@@ -37,7 +37,7 @@
 / {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
-                num_layer {
+                tri_layer {
                 if-layers = <NAV_L SYM_L>;
                 then-layer = <NUM_L>;
                 };
@@ -54,7 +54,7 @@
 
                 /* Functions */
                 esc { timeout-ms = <50>; key-positions = <0 1>; bindings = <&kp ESC>; };                        
-                ent { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp ENTER>; };
+                ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
                 tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
                 // prntscr { timeout-ms = <20>; key-positions = <9 10>; bindings = <&kp PRINTSCREEN>; };
 
@@ -142,7 +142,7 @@
                         &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4      &none                   &kp REML     &kp HOME      &kp END            &kp PRINTSCREEN  &trans 
                         &none        &kp RALT       &kp LSHFT       &kp LCTRL        &none                   &kp LEFT     &kp DOWN      &kp UP             &kp RIGHT        &td23
                         &trans       &trans         &trans          &trans                                                &kp CLONED    &none              &none            &none
-                                                                        &trans           &trans                  &trans       &trans
+                                                                    &trans           &trans                  &trans       &trans
                 >;
                 };
 
@@ -152,7 +152,7 @@
                         &kp EXCL     &kp AT         &kp HASH        &kp DLLR         &kp PRCNT               &kp MINUS     &kp AMPS      &kp KP_MULTIPLY     &kp LPAR       &kp RPAR
                         &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE        &kp GRAVE               &kp UNDER     &kp EQUAL     &kp LBKT            &kp RBKT       &kp PIPE
                         &trans       &trans         &trans          &none                                                  &kp PLUS      &kp LBRC            &kp RBRC       &kp BSLH
-                                                                        &trans           &trans                  &trans        &trans
+                                                                    &trans           &trans                  &trans        &trans
                 >;
                 };
 
@@ -160,9 +160,9 @@
                 label = "Num";
                 bindings = <
                         &none         &none         &none           &none            &none                   &kp KP_N0     &kp KP_N1     &kp KP_N2           &kp KP_N3      &none     
-                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &none                   &none         &kp KP_N4     &kp KP_N5           &kp KP_N6      &none
+                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &none                   &kp DOT       &kp KP_N4     &kp KP_N5           &kp KP_N6      &none
                         &none         &none         &none           &none                                                  &kp KP_N7     &kp KP_N8           &kp KP_N9      &none
-                                                                        &trans           &trans                  &trans        &trans
+                                                                    &trans           &trans                  &trans        &trans
                 
                 >;      
                 };
