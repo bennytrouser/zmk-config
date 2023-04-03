@@ -60,17 +60,12 @@
 
         /* Symbols */
         combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
-
-        // combo_uscore { 
-        //     timeout-ms = <20>;
-        //     key-positions = <31 32>;
-        //     bindings = <&kp UNDER>;
-        //     };
+        combo_uscore { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp UNDER>; layers = <DEF_L>; };
 
 
         /* Letters */
-        V { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp V>; layers = <DEF_L>; };
-        K { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp K>; layers = <DEF_L>; };
+        combo_V { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp V>; layers = <DEF_L>; };
+        combo_K { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp K>; layers = <DEF_L>; };
                     
         };
 
