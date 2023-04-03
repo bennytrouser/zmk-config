@@ -64,8 +64,8 @@
                 combo_apost { timeout-ms = <20>; key-positions = <18 19>; bindings = <&td23>; layers = <DEF_L>; };
 
                 /* Letters */
-                combo_V { timeout-ms = <20>; key-positions = <13 14>; bindings = <&kp V>; layers = <DEF_L>; };
-                combo_K { timeout-ms = <20>; key-positions = <15 16>; bindings = <&kp K>; layers = <DEF_L>; };
+                combo_V { timeout-ms = <20>; key-positions = <12 13>; bindings = <&kp V>; layers = <DEF_L>; };
+                combo_K { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp K>; layers = <DEF_L>; };
                     
         };
 
