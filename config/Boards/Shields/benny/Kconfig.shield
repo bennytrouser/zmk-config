@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_BENNY_LEFT
-	def_bool $(shields_list_contains,BENNY_left)
+	def_bool $(shields_list_contains,benny_left)
 
 config SHIELD_BENNY_RIGHT
-	def_bool $(shields_list_contains,BENNY_right)
+	def_bool $(shields_list_contains,benny_right)
