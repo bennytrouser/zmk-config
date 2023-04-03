@@ -1,2 +1,2 @@
 # zmk-config
-![](./keymap.svg)
+![](keymap.svg)
