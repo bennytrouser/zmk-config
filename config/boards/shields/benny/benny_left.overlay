@@ -6,7 +6,7 @@
 
 #include "benny.dtsi"
 
-&kscan0: kscan {
+&kscan0 {
 	// compatible = "zmk,kscan-gpio-direct";
 	// label = "KSCAN";
 	input-gpios

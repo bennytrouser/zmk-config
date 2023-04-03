@@ -10,7 +10,7 @@
 	col-offset = <16>;
 };
 
-&kscan0: kscan {
+&kscan0 {
 	// compatible = "zmk,kscan-gpio-direct";
 	// label = "KSCAN";
 	input-gpios
