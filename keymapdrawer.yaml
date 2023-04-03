@@ -1,0 +1,132 @@
+# FILL IN below field with a value like {qmk_keyboard: ferris/sweep}
+# or {ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2}}
+# see https://github.com/caksoylar/keymap-drawer/blob/main/KEYMAP_SPEC.md#layout
+layout:
+    ortho_layout:
+        split: true
+        rows: 3
+        columns: 5
+        thumbs: 2
+        drop_inner: true
+layers:
+  default_layer:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - 'Back Space'
+  - {t: A, h: LC(A)}
+  - R
+  - S
+  - T
+  - G
+  - M
+  - {t: N, h: LCTRL}
+  - E
+  - I
+  - O
+  - {t: Z, h: LC(Z)}
+  - {t: X, h: LC(X)}
+  - {t: C, h: LC(C)}
+  - {t: D, h: LC(V)}
+  - H
+  - '&comma_semi'
+  - '&dot_colon'
+  - /
+  - Nav
+  - {t: LSHIFT, h: sticky}
+  - {t: SPACE, h: RSHFT}
+  - Sym
+  Nav:
+  - {t: '1', h: '!'}
+  - {t: '2', h: '@'}
+  - {t: '3', h: '#'}
+  - {t: '4', h: $}
+  - ''
+  - LC(FSLH)
+  - HOME
+  - END
+  - PRINTSCREEN
+  - ''
+  - ''
+  - RALT
+  - LSHFT
+  - LCTRL
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - '&td23'
+  - ''
+  - ''
+  - ''
+  - ''
+  - LS(RA(DOWN))
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  Sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - '-'
+  - '&'
+  - '*'
+  - (
+  - )
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - '~'
+  - '`'
+  - _
+  - '='
+  - '['
+  - ']'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - +
+  - '{'
+  - '}'
+  - \
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  Num: ['', '', '', F5, F8, '0', '1', '2', '3', '', BT 0, BT 1, BT 2, BT 3, '', ., '4', '5', '6', '', '', '', '', '', '7', '8', '9', '', '', '', '', '']
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [17, 18]
+  k: ENTER
+- p: [11, 12]
+  k: TAB
+- p: [20, 21]
+  k: LEFT GUI
+- p: [24, 25]
+  k: '-'
+  l: [default_layer]
+- p: [18, 19]
+  k: '&td23'
+  l: [default_layer]
+- p: [12, 13]
+  k: V
+  l: [default_layer]
+- p: [16, 17]
+  k: K
+  l: [default_layer]
