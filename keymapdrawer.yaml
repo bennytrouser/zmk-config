@@ -10,105 +10,25 @@ layout:
         drop_inner: true
 layers:
   default_layer:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - 'Back Space'
-  - {t: A, h: LC(A)}
-  - R
-  - S
-  - T
-  - G
-  - M
-  - {t: N, h: LCTRL}
-  - E
-  - I
-  - O
-  - {t: Z, h: LC(Z)}
-  - {t: X, h: LC(X)}
-  - {t: C, h: LC(C)}
-  - {t: D, h: LC(V)}
-  - H
-  - '&comma_semi'
-  - '&dot_colon'
-  - /
-  - Nav
-  - {t: LSHIFT, h: sticky}
-  - {t: SPACE, h: RSHFT}
-  - Sym
+  - [Q,W,F,P,B,J,L,U,Y,"'"]
+  - [{t: A, h: Sel All},R,S,T,G,M,{t: N, h: LCTRL},E,I,O]
+  - [{t: Z, h: Undo},{t: V, h: Cut},{t: C, h: Copy},{t: D, h: Paste},H,',','.',/]
+  - [Nav,{t: LSHIFT, h: sticky},{t: SPACE, h: RSHFT},Sym]
   Nav:
-  - {t: '1', h: '!'}
-  - {t: '2', h: '@'}
-  - {t: '3', h: '#'}
-  - {t: '4', h: $}
-  - ''
-  - LC(FSLH)
-  - HOME
-  - END
-  - PRINTSCREEN
-  - ''
-  - ''
-  - RALT
-  - LSHFT
-  - LCTRL
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - '&td23'
-  - ''
-  - ''
-  - ''
-  - ''
-  - LS(RA(DOWN))
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
+  - [{t: '1', h: '!'},{t: '2', h: '@'},{t: '3', h: '#'},{t: '4', h: $},'',Line Comment,HOME,END,PrtSc,BkSpc]
+  - [Ctrl Alt Del,LALT,LSHFT,LCTRL,'',LEFT,DOWN,UP,RIGHT,"'"]
+  - ['','','','',Copy Line Down,'','',\]
+  - [{type: held},'','','']
   Sym:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - '-'
-  - '&'
-  - '*'
-  - (
-  - )
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - '~'
-  - '`'
-  - _
-  - '='
-  - '['
-  - ']'
-  - '|'
-  - ''
-  - ''
-  - ''
-  - ''
-  - +
-  - '{'
-  - '}'
-  - \
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  Num: ['', '', '', F5, F8, '0', '1', '2', '3', '', BT 0, BT 1, BT 2, BT 3, '', ., '4', '5', '6', '', '', '', '', '', '7', '8', '9', '', '', '', '', '']
+  - ['!','@','#','$','%',^,'&','*','(',')']
+  - [VOL DN,MUTE,VOL UP,'~','`','_','[','=',']','|']
+  - ['','','','','+','<','>','\']
+  - ['','','',{type: held}]
+  Num: 
+  - ['', '', F3, F5, F8, '0', '1', '2', '3', 'BkSpc']
+  - [BT 0, BT 1, BT 2, BT 3, '', ., '4', '5', '6', '']
+  - [BT CLR, '', '', '', '7', '8', '9', '']
+  - [{type: held},'','',{type: held}]
 combos:
 - p: [0, 1]
   k: ESC
@@ -118,15 +38,30 @@ combos:
   k: TAB
 - p: [20, 21]
   k: LEFT GUI
-- p: [24, 25]
+- p: [16, 17]
   k: '-'
   l: [default_layer]
-- p: [18, 19]
-  k: '&td23'
+- p: [1, 11]
+  k: (
   l: [default_layer]
-- p: [12, 13]
-  k: V
+- p: [2, 12]
+  k: '['
   l: [default_layer]
-- p: [16, 17]
+- p: [3, 13]
+  k: '{'
+  l: [default_layer]
+- p: [8, 18]
+  k: )
+  l: [default_layer]
+- p: [7, 17]
+  k: ']'
+  l: [default_layer]
+- p: [6, 16]
+  k: '}'
+  l: [default_layer]
+- p: [21, 22]
+  k: X
+  l: [default_layer]
+- p: [4, 14]
   k: K
   l: [default_layer]
