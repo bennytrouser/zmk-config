@@ -267,10 +267,10 @@ path {
 <rect rx="6.0" ry="6.0" x="602.0" y="618.0" width="56.0" height="52.0" class=""/>
 <text x="630.0" y="644.0" class="tap">)</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="60.0" y="700.0" class="tap">
-<tspan x="60.0" dy="-0.6em">VOL</tspan><tspan x="60.0" dy="1.2em">DN</tspan></text>
+<text x="60.0" y="700.0" class="tap">MUTE</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="700.0" class="tap">MUTE</text>
+<text x="120.0" y="700.0" class="tap">
+<tspan x="120.0" dy="-0.6em">VOL</tspan><tspan x="120.0" dy="1.2em">DN</tspan></text>
 <rect rx="6.0" ry="6.0" x="152.0" y="674.0" width="56.0" height="52.0" class=""/>
 <text x="180.0" y="700.0" class="tap">
 <tspan x="180.0" dy="-0.6em">VOL</tspan><tspan x="180.0" dy="1.2em">UP</tspan></text>
