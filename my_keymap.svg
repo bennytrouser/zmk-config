@@ -92,8 +92,7 @@ path {
 <rect rx="6.0" ry="6.0" x="542.0" y="58.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="84.0" class="tap">Y</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="58.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="84.0" class="tap">
-<tspan x="630.0" dy="-0.6em">Back</tspan><tspan x="630.0" dy="1.2em">Space</tspan></text>
+<text x="630.0" y="84.0" class="tap">&#x27;</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="114.0" width="56.0" height="52.0" class=""/>
 <text x="60.0" y="140.0" class="tap">A</text>
 <text x="60.0" y="164.0" class="hold">Sel All</text>
@@ -120,7 +119,7 @@ path {
 <text x="60.0" y="196.0" class="tap">Z</text>
 <text x="60.0" y="220.0" class="hold">Undo</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="170.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="196.0" class="tap">X</text>
+<text x="120.0" y="196.0" class="tap">V</text>
 <text x="120.0" y="220.0" class="hold">Cut</text>
 <rect rx="6.0" ry="6.0" x="152.0" y="170.0" width="56.0" height="52.0" class=""/>
 <text x="180.0" y="196.0" class="tap">C</text>
@@ -155,12 +154,24 @@ path {
 <rect rx="6.0" ry="6.0" x="76.0" y="183.0" width="28.0" height="26.0" class="combo"/>
 <text x="90.0" y="196.0" class="combo">
 <tspan x="90.0" dy="-0.6em">LEFT</tspan><tspan x="90.0" dy="1.2em">GUI</tspan></text>
-<rect rx="6.0" ry="6.0" x="466.0" y="183.0" width="28.0" height="26.0" class="combo"/>
-<text x="480.0" y="196.0" class="combo">-</text>
-<rect rx="6.0" ry="6.0" x="196.0" y="127.0" width="28.0" height="26.0" class="combo"/>
-<text x="210.0" y="140.0" class="combo">V</text>
 <rect rx="6.0" ry="6.0" x="466.0" y="127.0" width="28.0" height="26.0" class="combo"/>
-<text x="480.0" y="140.0" class="combo">K</text>
+<text x="480.0" y="140.0" class="combo">-</text>
+<rect rx="6.0" ry="6.0" x="106.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="120.0" y="112.0" class="combo">(</text>
+<rect rx="6.0" ry="6.0" x="166.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="180.0" y="112.0" class="combo">[</text>
+<rect rx="6.0" ry="6.0" x="226.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="240.0" y="112.0" class="combo">{</text>
+<rect rx="6.0" ry="6.0" x="556.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="570.0" y="112.0" class="combo">)</text>
+<rect rx="6.0" ry="6.0" x="496.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="510.0" y="112.0" class="combo">]</text>
+<rect rx="6.0" ry="6.0" x="436.0" y="99.0" width="28.0" height="26.0" class="combo"/>
+<text x="450.0" y="112.0" class="combo">}</text>
+<rect rx="6.0" ry="6.0" x="136.0" y="183.0" width="28.0" height="26.0" class="combo"/>
+<text x="150.0" y="196.0" class="combo">X</text>
+<rect rx="6.0" ry="6.0" x="286.0" y="127.0" width="28.0" height="26.0" class="combo"/>
+<text x="300.0" y="140.0" class="combo">K</text>
 </g>
 <g class="layer-Nav">
 <text x="30.0" y="308.0" class="label">Nav:</text>
@@ -187,9 +198,12 @@ path {
 <rect rx="6.0" ry="6.0" x="542.0" y="338.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="364.0" class="tap">PrtSc</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="338.0" width="56.0" height="52.0" class=""/>
+<text x="630.0" y="364.0" class="tap">BkSpc</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="394.0" width="56.0" height="52.0" class=""/>
+<text x="60.0" y="420.0" class="tap">
+<tspan x="60.0" dy="-1.2em">Ctrl</tspan><tspan x="60.0" dy="1.2em">Alt</tspan><tspan x="60.0" dy="1.2em">Del</tspan></text>
 <rect rx="6.0" ry="6.0" x="92.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="420.0" class="tap">RALT</text>
+<text x="120.0" y="420.0" class="tap">LALT</text>
 <rect rx="6.0" ry="6.0" x="152.0" y="394.0" width="56.0" height="52.0" class=""/>
 <text x="180.0" y="420.0" class="tap">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="394.0" width="56.0" height="52.0" class=""/>
@@ -204,17 +218,18 @@ path {
 <rect rx="6.0" ry="6.0" x="542.0" y="394.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="420.0" class="tap">RIGHT</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="420.0" class="tap">&amp;td23</text>
+<text x="630.0" y="420.0" class="tap">&#x27;</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="92.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="152.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="212.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="422.0" y="450.0" width="56.0" height="52.0" class=""/>
 <text x="450.0" y="476.0" class="tap">
-<tspan x="450.0" dy="-1.2em">Copy</tspan><tspan x="450.0" dy="1.2em">Row</tspan><tspan x="450.0" dy="1.2em">Down</tspan></text>
+<tspan x="450.0" dy="-1.2em">Copy</tspan><tspan x="450.0" dy="1.2em">Line</tspan><tspan x="450.0" dy="1.2em">Down</tspan></text>
 <rect rx="6.0" ry="6.0" x="482.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="542.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="602.0" y="450.0" width="56.0" height="52.0" class=""/>
+<text x="630.0" y="476.0" class="tap">\</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="506.0" width="56.0" height="52.0" class="held"/>
 <rect rx="6.0" ry="6.0" x="272.0" y="506.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="362.0" y="506.0" width="56.0" height="52.0" class=""/>
@@ -242,7 +257,7 @@ path {
 <rect rx="6.0" ry="6.0" x="272.0" y="646.0" width="56.0" height="52.0" class=""/>
 <text x="300.0" y="672.0" class="tap">%</text>
 <rect rx="6.0" ry="6.0" x="362.0" y="646.0" width="56.0" height="52.0" class=""/>
-<text x="390.0" y="672.0" class="tap">-</text>
+<text x="390.0" y="672.0" class="tap">^</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="618.0" width="56.0" height="52.0" class=""/>
 <text x="450.0" y="644.0" class="tap">&amp;</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="618.0" width="56.0" height="52.0" class=""/>
@@ -252,10 +267,10 @@ path {
 <rect rx="6.0" ry="6.0" x="602.0" y="618.0" width="56.0" height="52.0" class=""/>
 <text x="630.0" y="644.0" class="tap">)</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="60.0" y="700.0" class="tap">MUTE</text>
+<text x="60.0" y="700.0" class="tap">
+<tspan x="60.0" dy="-0.6em">VOL</tspan><tspan x="60.0" dy="1.2em">DN</tspan></text>
 <rect rx="6.0" ry="6.0" x="92.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="700.0" class="tap">
-<tspan x="120.0" dy="-0.6em">VOL</tspan><tspan x="120.0" dy="1.2em">DN</tspan></text>
+<text x="120.0" y="700.0" class="tap">MUTE</text>
 <rect rx="6.0" ry="6.0" x="152.0" y="674.0" width="56.0" height="52.0" class=""/>
 <text x="180.0" y="700.0" class="tap">
 <tspan x="180.0" dy="-0.6em">VOL</tspan><tspan x="180.0" dy="1.2em">UP</tspan></text>
@@ -266,9 +281,9 @@ path {
 <rect rx="6.0" ry="6.0" x="362.0" y="702.0" width="56.0" height="52.0" class=""/>
 <text x="390.0" y="728.0" class="tap">_</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="700.0" class="tap">=</text>
+<text x="450.0" y="700.0" class="tap">[</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="700.0" class="tap">[</text>
+<text x="510.0" y="700.0" class="tap">=</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="674.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="700.0" class="tap">]</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="674.0" width="56.0" height="52.0" class=""/>
@@ -280,9 +295,9 @@ path {
 <rect rx="6.0" ry="6.0" x="422.0" y="730.0" width="56.0" height="52.0" class=""/>
 <text x="450.0" y="756.0" class="tap">+</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="730.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="756.0" class="tap">{</text>
+<text x="510.0" y="756.0" class="tap">&lt;</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="730.0" width="56.0" height="52.0" class=""/>
-<text x="570.0" y="756.0" class="tap">}</text>
+<text x="570.0" y="756.0" class="tap">&gt;</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="730.0" width="56.0" height="52.0" class=""/>
 <text x="630.0" y="756.0" class="tap">\</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="786.0" width="56.0" height="52.0" class=""/>
@@ -304,6 +319,7 @@ path {
 <rect rx="6.0" ry="6.0" x="32.0" y="898.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="92.0" y="898.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="152.0" y="898.0" width="56.0" height="52.0" class=""/>
+<text x="180.0" y="924.0" class="tap">F3</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="898.0" width="56.0" height="52.0" class=""/>
 <text x="240.0" y="924.0" class="tap">F5</text>
 <rect rx="6.0" ry="6.0" x="272.0" y="926.0" width="56.0" height="52.0" class=""/>
@@ -317,6 +333,7 @@ path {
 <rect rx="6.0" ry="6.0" x="542.0" y="898.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="924.0" class="tap">3</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="898.0" width="56.0" height="52.0" class=""/>
+<text x="630.0" y="924.0" class="tap">BkSpc</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="954.0" width="56.0" height="52.0" class=""/>
 <text x="60.0" y="980.0" class="tap">
 <tspan x="60.0" dy="-0.6em">BT</tspan><tspan x="60.0" dy="1.2em">0</tspan></text>
@@ -340,6 +357,8 @@ path {
 <text x="570.0" y="980.0" class="tap">6</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="954.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="32.0" y="1010.0" width="56.0" height="52.0" class=""/>
+<text x="60.0" y="1036.0" class="tap">
+<tspan x="60.0" dy="-0.6em">BT</tspan><tspan x="60.0" dy="1.2em">CLR</tspan></text>
 <rect rx="6.0" ry="6.0" x="92.0" y="1010.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="152.0" y="1010.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="212.0" y="1010.0" width="56.0" height="52.0" class=""/>
@@ -350,10 +369,10 @@ path {
 <rect rx="6.0" ry="6.0" x="542.0" y="1010.0" width="56.0" height="52.0" class=""/>
 <text x="570.0" y="1036.0" class="tap">9</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="1010.0" width="56.0" height="52.0" class=""/>
-<rect rx="6.0" ry="6.0" x="212.0" y="1066.0" width="56.0" height="52.0" class=""/>
+<rect rx="6.0" ry="6.0" x="212.0" y="1066.0" width="56.0" height="52.0" class="held"/>
 <rect rx="6.0" ry="6.0" x="272.0" y="1066.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="362.0" y="1066.0" width="56.0" height="52.0" class=""/>
-<rect rx="6.0" ry="6.0" x="422.0" y="1066.0" width="56.0" height="52.0" class=""/>
+<rect rx="6.0" ry="6.0" x="422.0" y="1066.0" width="56.0" height="52.0" class="held"/>
 <rect rx="6.0" ry="6.0" x="76.0" y="911.0" width="28.0" height="26.0" class="combo"/>
 <text x="90.0" y="924.0" class="combo">ESC</text>
 <rect rx="6.0" ry="6.0" x="526.0" y="967.0" width="28.0" height="26.0" class="combo"/>
