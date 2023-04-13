@@ -19,9 +19,13 @@
 #define COPY LC(C)
 #define PASTE LC(V)
 #define UNDO LC(Z)
+#define CALTD LC(LA(DELETE))
+/* VS Code */
 #define CLONED LS(LA(DOWN))
 #define REML LC(FSLH)
-#define CALTD LC(LA(DELETE))
+#define LDWN LA(DOWN)
+#define LUP LA(UP)
+#define CRSRINS LS(LA(I))
 
 &mt {
     flavor = "tap-preferred";    
@@ -54,10 +58,11 @@
                                 28  29    30  31              */
 
                 /* Functions */
-                esc { timeout-ms = <50>; key-positions = <0 1>; bindings = <&kp ESC>; };                        
+                esc { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp ESC>; };                        
                 ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
                 tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
-                win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>;};
+                win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
+                backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
 
                 /* Symbols */
                 combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
@@ -128,6 +133,14 @@
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                         };
 
+                fslh_bslh: fslh_bslh {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "FSLH_BSLH";
+                        #binding-cells = <0>;
+                        bindings = <&kp FSLH>, <&kp &kp BSLH>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                        };
+
         };
 
         keymap {
@@ -143,18 +156,18 @@
                 nav_layer {
                 label = "Nav";
                         bindings = <
-                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &mt DLLR N4      &none            &kp REML     &kp HOME      &kp END        &kp PRINTSCREEN  &bspc_del 
-                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &td23
-                                &trans       &trans         &trans          &trans                                         &kp CLONED    &none          &none            &kp BSLH
+                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp REML     &kp LDWN      &kp LUP        &kp PRINTSCREEN  &bspc_del 
+                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &kp END
+                                &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                      &kp CLONED    &none          &none            &kp BSLH
                                                                             &trans           &trans           &trans       &trans
                         >;
                 };
                 sym_layer {
                 label = "Sym";
                         bindings = <
-                                &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp LPAR       &kp RPAR
-                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LBKT       &kp RBKT       &kp PIPE
-                                &trans       &trans         &trans          &none                                          &kp PLUS      &kp LT         &kp GT         &kp BSLH
+                                &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PRINTSCREEN  &bspc_del
+                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LBKT       &kp RBKT         &kp PIPE
+                                &trans       &trans         &trans          &none                                          &kp PLUS      &kp LT         &kp GT           &kp BSLH
                                                                             &trans           &trans          &trans        &trans
                         >;
                 };
