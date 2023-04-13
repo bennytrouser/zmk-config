@@ -58,11 +58,12 @@
                                 28  29    30  31              */
 
                 /* Functions */
-                esc { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp ESC>; };                        
+                esc { timeout-ms = <20>; key-positions = <1 2>; bindings = <&kp ESC>; };                        
                 ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
                 tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
                 win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
-                backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
+                line_com { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp REML>; layers = <DEF_L>; };
+                // backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
 
                 /* Symbols */
                 combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
@@ -73,6 +74,9 @@
                 combo_Rpar { timeout-ms = <20>; key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF_L>; };
                 combo_Rbkt { timeout-ms = <20>; key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF_L>; };
                 combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
+                combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L>; };
+                combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L>; };
+                combo_PIPE { timeout-ms = <20>; key-positions = <26 27>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
                 /* Letters */
                 combo_X { timeout-ms = <20>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
@@ -142,6 +146,14 @@
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                         };
 
+                qu_excl: qu_excl {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "QU_EXCL";
+                        #binding-cells = <0>;
+                        bindings = <&kp QMARK>, <&kp EXCL>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                        };
+
                 fslh_bslh: fslh_bslh {
                         compatible = "zmk,behavior-mod-morph";
                         label = "FSLH_BSLH";
@@ -158,14 +170,14 @@
                         bindings = <
                                 &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J         &kp L         &kp U          &kp Y        &td23   
                                 &mt LC(A) A   &kp R         &kp S           &kp T            &kp G           &kp M         &mt LCTRL N   &kp E          &kp I        &kp O      
-                                &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                    &kp H         &comma_semi    &dot_colon   &kp FSLH
-                                                                            &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &mo SYM_L
+                                &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                    &kp H         &comma_semi    &dot_colon   &qu_excl
+                                                                            &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &mtmobspc SYM_L 0
                         >;
                 };
                 nav_layer {
                 label = "Nav";
                         bindings = <
-                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp REML     &kp LDWN      &kp LUP        &kp PRINTSCREEN  &bspc_del 
+                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp HOME     &kp LDWN      &kp LUP        &kp END          &bspc_del 
                                 &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &kp END
                                 &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                      &kp CLONED    &none          &none            &kp BSLH
                                                                             &trans           &trans           &trans       &trans
@@ -175,7 +187,7 @@
                 label = "Sym";
                         bindings = <
                                 &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PRINTSCREEN  &bspc_del
-                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LBKT       &kp RBKT         &kp PIPE
+                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LBKT       &kp RBKT         &none
                                 &trans       &trans         &trans          &none                                          &kp PLUS      &kp LT         &kp GT           &kp BSLH
                                                                             &trans           &trans          &trans        &trans
                         >;
