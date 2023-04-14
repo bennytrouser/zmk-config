@@ -62,12 +62,12 @@
                 ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
                 tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
                 win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
-                line_com { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp REML>; layers = <DEF_L>; };
+                line_com { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
                 // backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
 
                 /* Symbols */
                 combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
-                combo_apost { timeout-ms = <20>; key-positions = <18 19>; bindings = <&td23>; layers = <DEF_L>; };
+                // combo_apost { timeout-ms = <20>; key-positions = <18 19>; bindings = <&td23>; layers = <DEF_L>; };
                 combo_lpar { timeout-ms = <20>; key-positions = <1 11>; bindings = <&kp LPAR>; layers = <DEF_L>; };
                 combo_lbkt { timeout-ms = <20>; key-positions = <2 12>; bindings = <&kp LBKT>; layers = <DEF_L>; };
                 combo_lbrc { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LBRC>; layers = <DEF_L>; };
