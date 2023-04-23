@@ -41,13 +41,13 @@
 
 
 / {
-        conditional_layers {
-                compatible = "zmk,conditional-layers";
-                tri_layer {
-                if-layers = <NAV_L SYM_L>;
-                then-layer = <NUM_L>;
-                };
-        };
+        // conditional_layers {
+        //         compatible = "zmk,conditional-layers";
+        //         tri_layer {
+        //         if-layers = <NAV_L SYM_L>;
+        //         then-layer = <NUM_L>;
+        //         };
+        // };
         
         combos {
                 compatible = "zmk,combos";
@@ -84,7 +84,8 @@
                 combo_K { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
 
                 /* Layers */
-                combo_num { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;};
+                combo_num_left { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;};
+                combo_num_both { timeout-ms = <20>; key-positions = <28 31>; bindings = <&mo NUM_L>;};
                 combo_bt { timeout-ms = <20>; key-positions = <0 4>; bindings = <&mo BT_L>;};
                     
         };
@@ -164,36 +165,36 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-                                &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J         &kp L         &kp U          &kp Y        &sqt_dqt   
-                                &mt LC(A) A   &kp R         &kp S           &kp T            &kp G           &kp M         &mt LCTRL N   &kp E          &kp I        &kp O      
-                                &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                    &kp H         &comma_semi    &dot_colon   &qu_excl
+                                &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J         &kp L         &kp U          &kp Y         &sqt_dqt   
+                                &mt LC(A) A   &kp R         &kp S           &kp T            &kp G           &kp M         &mt LCTRL N   &mt LSHFT E    &mt LALT I    &kp O      
+                                &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                    &kp H         &comma_semi    &dot_colon    &qu_excl
                                                                             &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltmobspc SYM_L 0
                         >;
                 };
                 nav_layer {
                 label = "Nav";
                         bindings = <
-                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp HOME     &kp LDWN      &kp LUP        &kp END          &bspc_del 
-                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &kp LC(L)
-                                &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                      &kp CLONED    &none          &none            &kp BSLH
+                                &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp HOME     &kp LDWN      &kp LUP        &kp END       &bspc_del 
+                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT     &kp LC(L)
+                                &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                      &kp CLONED    &none          &none         &kp BSLH
                                                                             &trans           &trans           &trans       &trans
                         >;
                 };
                 sym_layer {
                 label = "Sym";
                         bindings = <
-                                &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PRINTSCREEN  &bspc_del
-                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LT         &kp GT           &none
-                                &trans       &trans         &trans          &none                                          &kp PLUS      &none          &none            &none
+                                &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PSCRN    &bspc_del
+                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LT         &kp GT       &none
+                                &trans       &trans         &trans          &none                                          &kp PLUS      &none          &none        &none
                                                                             &trans           &trans          &trans        &trans
                         >;
                 };
                 num_layer {
                 label = "Num";
                         bindings = <
-                                &none         &none         &kp F3          &kp F5           &kp F8           &kp N0        &kp N1     &kp N2           &kp N3      &bspc_del     
-                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &none            &kp DOT       &kp N4     &kp N5           &kp N6      &none
-                                &bt BT_CLR    &none         &none           &none                                           &kp N7     &kp N8           &kp N9      &none
+                                &kp F1        &kp F2        &kp F3          &kp F4           &kp F5           &kp N0        &kp N1     &kp N2           &kp N3      &bspc_del     
+                                &kp F6        &kp F7        &kp F8          &kp F9           &kp F10          &kp DOT       &kp N4     &kp N5           &kp N6      &none
+                                &kp F11       &kp F12       &none           &none                                           &kp N7     &kp N8           &kp N9      &none
                                                                             &trans           &trans           &trans        &trans
                         
                         >;
