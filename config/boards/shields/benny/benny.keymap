@@ -76,11 +76,14 @@
                 combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
                 combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L>; };
                 combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L>; };
-                combo_PIPE { timeout-ms = <20>; key-positions = <26 27>; bindings = <&kp PIPE>; layers = <DEF_L>; };
+                // combo_PIPE { timeout-ms = <20>; key-positions = <26 27>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
                 /* Letters */
                 combo_X { timeout-ms = <20>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
                 combo_K { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
+
+                /* Layers */
+                combo_num { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;}
                     
         };
 
@@ -111,14 +114,22 @@
                         bindings = <&mo>, <&kp>;
                         };
 
-                mtmobspc: mt_sym_bspc {
+                ltsymquo: lt_sym_quo {
                         compatible = "zmk,behavior-hold-tap";
-                        label = "MT_SYM_BSPC";
-                        flavor = "hold-preferred";
+                        label = "LT_SYM_QUO";
+                        flavor = "tap-preferred";
                         #binding-cells = <2>;    
                         tapping-term-ms = <200>;
-                        bindings = <&mo>, <&bspc_del>;
+                        bindings = <&mo>, <&td23>;
                         };
+                // mtmobspc: mt_sym_bspc {
+                //         compatible = "zmk,behavior-hold-tap";
+                //         label = "MT_SYM_BSPC";
+                //         flavor = "hold-preferred";
+                //         #binding-cells = <2>;    
+                //         tapping-term-ms = <200>;
+                //         bindings = <&mo>, <&bspc_del>;
+                //         };
 
                 /* Mod Morphs */
                 bspc_del: backspace_delete {
@@ -168,17 +179,17 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-                                &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J         &kp L         &kp U          &kp Y        &td23   
+                                &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J         &kp L         &kp U          &kp Y        &bspc_del   
                                 &mt LC(A) A   &kp R         &kp S           &kp T            &kp G           &kp M         &mt LCTRL N   &kp E          &kp I        &kp O      
                                 &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                    &kp H         &comma_semi    &dot_colon   &qu_excl
-                                                                            &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &mtmobspc SYM_L 0
+                                                                            &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltsymquo SYM_L 0
                         >;
                 };
                 nav_layer {
                 label = "Nav";
                         bindings = <
                                 &mt EXCL N1  &mt AT N2      &mt HASH N3     &kp CRSRINS      &none            &kp HOME     &kp LDWN      &kp LUP        &kp END          &bspc_del 
-                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &kp END
+                                &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT        &kp LC(L)
                                 &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                      &kp CLONED    &none          &none            &kp BSLH
                                                                             &trans           &trans           &trans       &trans
                         >;
@@ -187,8 +198,8 @@
                 label = "Sym";
                         bindings = <
                                 &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PRINTSCREEN  &bspc_del
-                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LBKT       &kp RBKT         &none
-                                &trans       &trans         &trans          &none                                          &kp PLUS      &kp LT         &kp GT           &kp BSLH
+                                &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &kp UNDER     &kp EQUAL     &kp LT         &kp GT           &none
+                                &trans       &trans         &trans          &none                                          &kp PLUS      &none          &none            &none
                                                                             &trans           &trans          &trans        &trans
                         >;
                 };
