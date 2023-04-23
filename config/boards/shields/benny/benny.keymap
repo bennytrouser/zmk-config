@@ -83,7 +83,7 @@
                 combo_K { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
 
                 /* Layers */
-                combo_num { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;}
+                combo_num { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;};
                     
         };
 
