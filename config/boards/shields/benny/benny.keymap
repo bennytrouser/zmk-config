@@ -84,8 +84,7 @@
                 combo_K { timeout-ms = <20>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
 
                 /* Layers */
-                combo_num_left { timeout-ms = <20>; key-positions = <28 29>; bindings = <&mo NUM_L>;};
-                combo_num_both { timeout-ms = <20>; key-positions = <28 31>; bindings = <&mo NUM_L>;};
+                combo_num { timeout-ms = <20>; key-positions = <11 13>; bindings = <&mo NUM_L>;};
                 combo_bt { timeout-ms = <20>; key-positions = <0 4>; bindings = <&mo BT_L>;};
                     
         };
@@ -196,7 +195,6 @@
                                 &kp F6        &kp F7        &kp F8          &kp F9           &kp F10          &kp DOT       &kp N4     &kp N5           &kp N6      &none
                                 &kp F11       &kp F12       &none           &none                                           &kp N7     &kp N8           &kp N9      &none
                                                                             &trans           &trans           &trans        &trans
-                        
                         >;
                 };
                 bt_layer {
