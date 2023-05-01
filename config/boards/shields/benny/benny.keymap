@@ -86,6 +86,7 @@
                 /* Letters */
                 combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
                 combo_K { timeout-ms = <50>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
+                combo_V { timeout-ms = <50>; key-positions = <13 23>; bindings = <&kp V>; layers = <DEF_L>; };
 
                 /* Layers */
                 combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
@@ -98,11 +99,11 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_LEFT";
                         #binding-cells = <2>;
-                        flavor = "balanced";
+                        flavor = "tap-preferred";
                         tapping-term-ms = <280>;
                         quick-tap-ms = <175>;
                         bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <KEYS_R THUMBS>;
+                        hold-trigger-key-positions = <KEYS_L THUMBS>;
                         hold-trigger-on-release;
                         global-quick-tap;
                         };
@@ -111,11 +112,11 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_RIGHT";
                         #binding-cells = <2>;
-                        flavor = "balanced";
+                        flavor = "tap-preferred";
                         tapping-term-ms = <280>;
                         quick-tap-ms = <175>;
                         bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <KEYS_L THUMBS>;
+                        hold-trigger-key-positions = <KEYS_R THUMBS>;
                         hold-trigger-on-release;
                         global-quick-tap;
                         };
