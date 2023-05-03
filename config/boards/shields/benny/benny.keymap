@@ -233,7 +233,7 @@
                         >;
                 };
                 apt_layer {
-                label = "rsth"
+                label = "rsth";
                         bindings = <
                                 &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J     &kp L           &kp U          &kp Y         &sqt_dqt   
                                 &mt LC(A) R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp V                &kp M     &hmrr LCTRL N   &hmrr LSHFT A  &hmrr LALT I  &kp O      
