@@ -15,6 +15,7 @@
 #define SYM_L 2
 #define NUM_L 3
 #define BT_L 4
+#define APT_L 5
 
 /* Shortcuts */
 #define CUT LC(X)
@@ -92,6 +93,7 @@
                 /* Layers */
                 combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
                 combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+                combo_apt { timeout-ms = <100>; key-positions = <9 27>; bindings = <&tog APT_L>; layers = <DEF_L>; };
                     
         };
 
@@ -228,6 +230,15 @@
                                 &none   &none   &none   &none                                  &out OUT_USB  &out OUT_BLE  &none           &bt BT_CLR    
                                                         &trans  &trans           &trans   &trans
                         
+                        >;
+                };
+                apt_layer {
+                label = "rsth"
+                        bindings = <
+                                &kp Q         &kp W         &kp F           &kp P            &kp B                &kp J     &kp L           &kp U          &kp Y         &sqt_dqt   
+                                &mt LC(A) R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp V                &kp M     &hmrr LCTRL N   &hmrr LSHFT A  &hmrr LALT I  &kp O      
+                                &mt UNDO Z    &mt CUT C     &mt COPY G      &mt PASTE D                                     &kp X           &comma_semi    &dot_colon    &qu_excl
+                                                                            &mo NAV_L     &mtrsh LSHIFT SPACE     &mtrsh RSHFT E    &ltsymspc SYM_L 0
                         >;
                 };
         
