@@ -87,7 +87,7 @@
 
         /* Letters */
         combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
-        combo_K { timeout-ms = <50>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
+        combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
         // combo_V { timeout-ms = <50>; key-positions = <13 23>; bindings = <&kp V>; layers = <DEF_L>; };
 
         /* Layers */
