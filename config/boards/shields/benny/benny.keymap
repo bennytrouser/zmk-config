@@ -23,6 +23,7 @@
 #define UNDO LC(Z)
 #define CALTD LC(LA(DELETE))
 #define SLALL LC(A)
+
 /* VS Code */
 #define CLONED LS(LA(DOWN))
 #define REML LC(FSLH)
