@@ -32,9 +32,9 @@
 #define CRSRINS LS(LA(I))
 
 /* Key Groups */
-#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 // left-hand keys
-#define KEYS_R 5 6 7 8 9 15 16 17 18 19 24 25 26 27 // right-hand keys
-#define THUMBS 28 29 30 31                        // thumb keys
+// #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 // left-hand keys
+// #define KEYS_R 5 6 7 8 9 15 16 17 18 19 24 25 26 27 // right-hand keys
+// #define THUMBS 28 29 30 31                        // thumb keys
 
 &mt {
     flavor = "tap-preferred";    
@@ -64,6 +64,10 @@
         tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
+        lctrl { timeout-ms = <20>; key-positions = <13 23>; bindings = <&kp LCTRL>; layers = <DEF_L>; };
+        rctrl { timeout-ms = <20>; key-positions = <16 24>; bindings = <&kp RCTRL>; layers = <DEF_L>; };
+        lalt { timeout-ms = <20>; key-positions = <11 21>; bindings = <&kp LALT>; layers = <DEF_L>; };
+        ralt { timeout-ms = <20>; key-positions = <18 26>; bindings = <&kp RALT>; layers = <DEF_L>; };
         // backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
 
         /* Symbols */
@@ -76,6 +80,9 @@
         combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
         combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L>; };
         combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L>; };
+        combo_LT { timeout-ms = <20>; key-positions = <0 10>; bindings = <&kp LT>; layers = <DEF_L>; };
+        combo_GT { timeout-ms = <20>; key-positions = <9 19>; bindings = <&kp GT>; layers = <DEF_L>; };
+        combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L>; };
         // combo_PIPE { timeout-ms = <20>; key-positions = <26 27>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
         /* Letters */
@@ -90,31 +97,31 @@
     };
 
     behaviors {
-        hmrl: homerow_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LEFT";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
-            global-quick-tap;
-            };
+        // hmrl: homerow_left {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "HOMEROW_LEFT";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <280>;
+        //     quick-tap-ms = <175>;
+        //     bindings = <&kp>, <&kp>;
+        //     hold-trigger-key-positions = <KEYS_R THUMBS>;
+        //     hold-trigger-on-release;
+        //     global-quick-tap;
+        //     };
 
-        hmrr: homerow_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_RIGHT";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
-            global-quick-tap;
-            };
+        // hmrr: homerow_right {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "HOMEROW_RIGHT";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <280>;
+        //     quick-tap-ms = <175>;
+        //     bindings = <&kp>, <&kp>;
+        //     hold-trigger-key-positions = <KEYS_L THUMBS>;
+        //     hold-trigger-on-release;
+        //     global-quick-tap;
+        //     };
 
         sqt_dqt: sqt_dqt {
             compatible = "zmk,behavior-tap-dance";
@@ -183,9 +190,9 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                    &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &sqt_dqt   
-                    &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr LSHFT E  &hmrr LALT I  &kp O      
-                    &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
+                    &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L          &kp U          &kp Y         &sqt_dqt   
+                    &mt SLALL A   &kp R         &kp S           &kp T            &kp G           &kp M     &kp N          &kp E          &kp I         &kp O      
+                    &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H          &comma_semi    &dot_colon    &qu_excl
                                                                 &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
             >;
         };
@@ -201,9 +208,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                    &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PSCRN    &bspc_del
-                    &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp TILDE     &kp GRAVE          &none         &kp EQUAL     &kp LT         &kp GT       &kp GRAVE
-                    &trans       &trans         &trans          &none                                          &kp PLUS      &none          &none        &none
+                    &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PSCRN    &kp TILDE
+                    &kp F1       &kp F2         &kp F3          &kp F4        &kp F5             &none         &kp RCTRL     &kp RSHFT      &kp RALT     &kp GRAVE
+                    &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &none                                          &none         &none          &none        &none
                                                                 &trans           &trans          &trans        &trans
             >;
         };
