@@ -64,7 +64,6 @@
         tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
-        // backsp {timeout-ms = <20>; key-positions = <9 19>; bindings = <&bspc_del>; layers = <DEF_L>; };
 
         /* Symbols */
         combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
@@ -76,7 +75,9 @@
         combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
         combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L>; };
         combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L>; };
-        // combo_PIPE { timeout-ms = <20>; key-positions = <26 27>; bindings = <&kp PIPE>; layers = <DEF_L>; };
+        combo_LT { timeout-ms = <20>; key-positions = <0 10>; bindings = <&kp LT>; layers = <DEF_L>; };
+        combo_GT { timeout-ms = <20>; key-positions = <9 19>; bindings = <&kp GT>; layers = <DEF_L>; };
+        combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L>; };
 
         /* Letters */
         combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
@@ -202,7 +203,7 @@
             label = "Sym";
             bindings = <
                     &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PSCRN    &kp TILDE
-                    &kp F1       &kp F2         &kp F3          &kp F4        &kp F5             &none         &kp RCTRL     &kp RSHFT      &kp RALT     &kp GRAVE
+                    &kp F1       &kp F2         &kp F3          &kp F4        &kp F5             &none         &kp RCTRL     &kp RSHFT      &kp LALT     &kp GRAVE
                     &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &none                                          &none         &none          &none        &none
                                                                 &trans           &trans          &trans        &trans
             >;
