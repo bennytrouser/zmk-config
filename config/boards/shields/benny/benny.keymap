@@ -87,8 +87,8 @@
 
         /* Letters */
         combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
-        combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
-        // combo_V { timeout-ms = <50>; key-positions = <13 23>; bindings = <&kp V>; layers = <DEF_L>; };
+        // combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
+        combo_V { timeout-ms = <50>; key-positions = <12 13>; bindings = <&kp V>; layers = <DEF_L>; };
 
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
@@ -190,10 +190,10 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                    &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L          &kp U          &kp Y         &sqt_dqt   
-                    &mt SLALL A   &kp R         &kp S           &kp T            &kp G           &kp M     &kp N          &kp E          &kp I         &kp O      
-                    &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H          &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
+                    &kp Q         &kp W         &kp F           &kp P         &kp B                  &kp J     &kp L          &kp U          &kp Y         &sqt_dqt   
+                    &mt SLALL R   &kp S         &kp T           &kp H         &kp K                  &kp M     &kp N          &kp A          &kp I         &kp O      
+                    &mt UNDO Z    &mt CUT C     &mt COPY G      &mt PASTE D                                    &kp M          &comma_semi    &dot_colon    &qu_excl
+                                                                &mo NAV_L     &mtrsh LSHIFT SPACE    &mtrsh RSHFT E    &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
