@@ -194,7 +194,7 @@
             label = "Nav";
             bindings = <
                     &kp N1       &kp F2         &kp F3          &kp F4           &kp F5           &kp HOME  &kp LDWN      &kp LUP        &kp END       &kp PG_UP 
-                    &kp CALTD    &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT     &kp PG_DN
+                    &kp LGUI     &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT     &kp PG_DN
                     &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                   &kp CLONED    &kp LC(L)      &none         &kp CRSRINS
                                                                 &trans           &trans           &trans    &bspc_del
             >;
@@ -204,7 +204,7 @@
             bindings = <
                     &kp EXCL     &kp AT         &kp HASH        &kp DLLR      &kp PRCNT          &kp CARET     &kp AMPS      &kp STAR       &kp PSCRN    &kp TILDE
                     &kp F1       &kp F2         &kp F3          &kp F4        &kp F5             &none         &kp RCTRL     &kp RSHFT      &kp LALT     &kp GRAVE
-                    &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &none                                          &none         &none          &none        &none
+                    &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &none                                          &kp C_BRI_DN  &kp C_BRI_UP   &none        &none
                                                                 &trans           &trans          &trans        &trans
             >;
         };
