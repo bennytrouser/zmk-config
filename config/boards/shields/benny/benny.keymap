@@ -159,9 +159,9 @@
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTE_GRAVE";
             #binding-cells = <0>;
-            bindings = <sqt_dqt>, <&kp GRAVE>;
+            bindings = <&sqt_dqt>, <&kp GRAVE>;
             mods = <(MOD_LSFT)>;
-        };
+            };
 
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
