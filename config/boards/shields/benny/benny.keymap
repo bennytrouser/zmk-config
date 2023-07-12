@@ -160,7 +160,7 @@
             label = "QUOTE_GRAVE";
             #binding-cells = <0>;
             bindings = <&sqt_dqt>, <&kp GRAVE>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
         comma_semi: comma_semi {
