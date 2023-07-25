@@ -15,6 +15,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: benny_left
+    shield: nostrum_left
   - board: nice_nano_v2
-    shield: benny_right
+    shield: nostrum_right
