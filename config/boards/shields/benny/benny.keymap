@@ -86,7 +86,7 @@
 
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
-        combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+        combo_bt { timeout-ms = <200>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
             
     };
 
@@ -154,6 +154,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
             };
+        
+        qt_grave: quote_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&sqt_dqt>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -184,7 +192,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                    &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &sqt_dqt   
+                    &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
                     &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr LSHFT E  &hmrr LALT I  &kp O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
                                                                 &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
