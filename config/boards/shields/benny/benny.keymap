@@ -86,7 +86,7 @@
 
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
-        combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+        combo_bt { timeout-ms = <200>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
             
     };
 
