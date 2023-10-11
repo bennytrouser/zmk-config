@@ -188,6 +188,14 @@
             bindings = <&kp QMARK>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             };
+
+        sft_cap: sft_cap {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SFT_CAP";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>, <&caps_word>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
     };
 
     keymap {
@@ -197,7 +205,7 @@
                     &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
                     &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr LSHFT E  &hmrr LALT I  &kp O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &sk LSHIFT      &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
+                                                                &mo NAV_L        &sft_cap        &kp SPACE    &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
