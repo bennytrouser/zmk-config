@@ -130,7 +130,7 @@
         mtrsh: mt_rshift_space {
             compatible = "zmk,behavior-hold-tap";
             label = "RSHIFT_HOLDTAP";
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             #binding-cells = <2>;    
             tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -205,7 +205,7 @@
                     &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
                     &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr LSHFT E  &hmrr LALT I  &kp O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &sft_cap        &kp SPACE    &ltsymspc SYM_L 0
+                                                                &mo NAV_L        &sft_cap        &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
