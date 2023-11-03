@@ -43,7 +43,7 @@
 
 
 &sk {
-    release-after-ms = <2000>;
+    release-after-ms = <1000>;
     quick-release;
 };
     
@@ -88,7 +88,7 @@
 
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
-        combo_bt { timeout-ms = <200>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+        combo_bt { timeout-ms = <20>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
             
     };
 
@@ -103,7 +103,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap;
+            require-prior-idle-ms = <125>;
             };
 
         hmrr: homerow_right {
@@ -116,7 +116,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap;
+            require-prior-idle-ms = <125>;
             };
 
         sqt_dqt: sqt_dqt {
@@ -132,7 +132,7 @@
             label = "RSHIFT_HOLDTAP";
             flavor = "tap-preferred";
             #binding-cells = <2>;    
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
             };
 
@@ -194,7 +194,7 @@
             label = "SFT_CAP";
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
             };
     };
 
