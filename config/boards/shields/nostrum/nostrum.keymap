@@ -247,7 +247,7 @@
             >;
         };
         apt_layer {
-            label = "APT"
+            label = "APT";
             bindings = <
                     &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
                     &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp V     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
