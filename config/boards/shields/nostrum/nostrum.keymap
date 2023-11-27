@@ -11,11 +11,11 @@
 
 /* Layers */
 #define DEF_L 0
-#define NAV_L 1
-#define SYM_L 2
-#define NUM_L 3
-#define BT_L 4
-#define APT 5
+#define APT 1
+#define NAV_L 2
+#define SYM_L 3
+#define NUM_L 4
+#define BT_L 5
 
 /* Shortcuts */
 #define CUT LC(X)
@@ -210,6 +210,15 @@
                                                                 &mo NAV_L        &sft_cap        &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
             >;
         };
+        apt_layer {
+            label = "APT";
+            bindings = <
+                    &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
+                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp V     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
+                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &kp M           &comma_semi    &dot_colon    &qu_excl
+                                                                &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
+            >;
+        };
         nav_layer {
             label = "Nav";
             bindings = <
@@ -244,15 +253,6 @@
                     &none   &none   &none   &none   &none            &none         &none         &none         &none           &none     
                     &none   &none   &none   &none                                       &out OUT_USB  &out OUT_BLE  &none           &bt BT_CLR    
                                             &bootloader  &sys_reset       &sys_reset   &bootloader
-            >;
-        };
-        apt_layer {
-            label = "APT";
-            bindings = <
-                    &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
-                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp V     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
-                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &kp M           &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
             >;
         };
     };
