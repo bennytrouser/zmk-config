@@ -245,6 +245,7 @@
                     &none   &none   &none   &none                                       &out OUT_USB  &out OUT_BLE  &none           &bt BT_CLR    
                                             &bootloader  &sys_reset       &sys_reset   &bootloader
             >;
+        };
         apt_layer {
             label = "APT"
             bindings = <
@@ -253,7 +254,6 @@
                     &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &kp M           &comma_semi    &dot_colon    &qu_excl
                                                                 &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
             >;
-        };
         };
     };
 };
