@@ -11,10 +11,11 @@
 
 /* Layers */
 #define DEF_L 0
-#define NAV_L 1
-#define SYM_L 2
-#define NUM_L 3
-#define BT_L 4
+#define APT 1
+#define NAV_L 2
+#define SYM_L 3
+#define NUM_L 4
+#define BT_L 5
 
 /* Shortcuts */
 #define CUT LC(X)
@@ -82,13 +83,14 @@
         combo_Pipe { timeout-ms = <20>; key-positions = <16 24>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
         /* Letters */
-        combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
+        combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L APT>; };
         combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
         // combo_V { timeout-ms = <50>; key-positions = <13 23>; bindings = <&kp V>; layers = <DEF_L>; };
 
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
         combo_bt { timeout-ms = <20>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+        combo_apt { timeout-ms = <20>; key-positions = <0 9>; bindings = <&tog APT>; layers = <DEF_L APT>; };
             
     };
 
@@ -203,9 +205,18 @@
         default_layer {
             bindings = <
                     &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
-                    &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr LSHFT E  &hmrr LALT I  &kp O      
+                    &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr RSHFT E  &hmrr LALT I  &kp O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
                                                                 &mo NAV_L        &sft_cap        &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
+            >;
+        };
+        apt_layer {
+            label = "APT";
+            bindings = <
+                    &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
+                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp V     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
+                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &kp M           &comma_semi    &dot_colon    &qu_excl
+                                                                &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
             >;
         };
         nav_layer {
