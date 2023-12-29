@@ -217,7 +217,7 @@
                     &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
                     &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp M     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
                     &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &bspc_del       &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
+                                                                &mo NAV_L  &mtrsh LSHFT SPACE    &mt RSHFT E  &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
