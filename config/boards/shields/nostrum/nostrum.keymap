@@ -47,7 +47,10 @@
     release-after-ms = <1000>;
     quick-release;
 };
-    
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 
 / {
     
@@ -60,15 +63,16 @@
                     28  29    30  31              */
 
         /* Functions */
-        esc { timeout-ms = <20>; key-positions = <1 2>; bindings = <&kp ESC>; };                        
+        esc { timeout-ms = <20>; key-positions = <0 1>; bindings = <&kp ESC>; };                        
         ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
         tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
-        caps_word { timeout-ms = <50>; key-positions = <12 17>; bindings = <&caps_word>; layers = <DEF_L>; };
+        // caps_word { timeout-ms = <50>; key-positions = <12 17>; bindings = <&caps_word>; layers = <DEF_L>; };
 
         /* Symbols */
         combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
+        combo_uscore { timeout-ms = <20>; key-positions = <6 7>; bindings = <&kp UNDER>; layers = <DEF_L>; };
         combo_lpar { timeout-ms = <20>; key-positions = <1 11>; bindings = <&kp LPAR>; layers = <DEF_L>; };
         combo_lbkt { timeout-ms = <20>; key-positions = <2 12>; bindings = <&kp LBKT>; layers = <DEF_L>; };
         combo_lbrc { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LBRC>; layers = <DEF_L>; };
@@ -85,11 +89,12 @@
         /* Letters */
         combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L APT>; };
         combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
-        // combo_V { timeout-ms = <50>; key-positions = <13 23>; bindings = <&kp V>; layers = <DEF_L>; };
+        combo_K2 { timeout-ms = <20>; key-positions = <12 13>; bindings = <&kp K>; layers = <DEF_L>; };
+        combo_V { timeout-ms = <20>; key-positions = <1 2>; bindings = <&kp V>; layers = <DEF_L APT>; };
 
         /* Layers */
-        combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
-        combo_bt { timeout-ms = <20>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
+        combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L APT>; };
+        combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
         combo_apt { timeout-ms = <20>; key-positions = <0 9>; bindings = <&tog APT>; layers = <DEF_L APT>; };
             
     };
@@ -134,7 +139,7 @@
             label = "RSHIFT_HOLDTAP";
             flavor = "tap-preferred";
             #binding-cells = <2>;    
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
             };
 
@@ -214,9 +219,9 @@
             label = "APT";
             bindings = <
                     &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
-                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp V     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
-                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &kp M           &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &mtrsh RSHFT SPACE  &sft_cap  &kp E
+                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp M     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
+                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &bspc_del       &comma_semi    &dot_colon    &qu_excl
+                                                                &mo NAV_L  &mtrsh LSHFT SPACE    &mt RSHFT E  &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
