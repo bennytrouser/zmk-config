@@ -49,7 +49,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
 
 / {
@@ -66,24 +66,25 @@
         esc { timeout-ms = <20>; key-positions = <0 1>; bindings = <&kp ESC>; };                        
         ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
         tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
+        bdel { timeout-ms = <20> key-positions = <7 8>; bindings = <&bspc_del>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
         // caps_word { timeout-ms = <50>; key-positions = <12 17>; bindings = <&caps_word>; layers = <DEF_L>; };
 
         /* Symbols */
-        combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
+        combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L NUM_L>; };
         combo_uscore { timeout-ms = <20>; key-positions = <6 7>; bindings = <&kp UNDER>; layers = <DEF_L>; };
         combo_lpar { timeout-ms = <20>; key-positions = <1 11>; bindings = <&kp LPAR>; layers = <DEF_L>; };
-        combo_lbkt { timeout-ms = <20>; key-positions = <2 12>; bindings = <&kp LBKT>; layers = <DEF_L>; };
-        combo_lbrc { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LBRC>; layers = <DEF_L>; };
+        combo_lbkt { timeout-ms = <20>; key-positions = <2 12>; bindings = <&lbrc_bkt>; layers = <DEF_L>; };
+        // combo_lbrc { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LBRC>; layers = <DEF_L>; };
         combo_Rpar { timeout-ms = <20>; key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF_L>; };
-        combo_Rbkt { timeout-ms = <20>; key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF_L>; };
-        combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
-        combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L>; };
-        combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L>; };
-        combo_LT { timeout-ms = <20>; key-positions = <0 10>; bindings = <&kp LT>; layers = <DEF_L>; };
-        combo_GT { timeout-ms = <20>; key-positions = <9 19>; bindings = <&kp GT>; layers = <DEF_L>; };
-        combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L>; };
+        combo_Rbkt { timeout-ms = <20>; key-positions = <7 17>; bindings = <&rbrc_bkt>; layers = <DEF_L>; };
+        // combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
+        combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L NUM_L>; };
+        combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L NUM_L>; };
+        combo_LT { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LT>; layers = <DEF_L NUM_L>; };
+        combo_GT { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp GT>; layers = <DEF_L NUM_L>; };
+        combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L NUM_L>; };
         combo_Pipe { timeout-ms = <20>; key-positions = <16 24>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
         /* Letters */
@@ -139,7 +140,7 @@
             label = "RSHIFT_HOLDTAP";
             flavor = "tap-preferred";
             #binding-cells = <2>;    
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
             };
 
@@ -203,6 +204,22 @@
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
             };
+
+        lbrc_bkt: lbrc_bkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRC_LBKT";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LBKT>;
+            mods = <(MOD_LSFT)>;
+            };
+
+        rbrc_bkt: rbrc_bkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRC_RBKT";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp RBKT>;
+            mods = <(MOD_LSFT)>;
+            };
     };
 
     keymap {
@@ -245,10 +262,10 @@
         num_layer {
             label = "Num";
             bindings = <
-                    &kp F1     &kp F2     &kp F3    &kp F4      &kp F5           &kp N0        &kp N1   &kp N2         &kp N3    &none     
+                    &kp F1     &kp F2     &kp F3    &kp F4      &kp F5           &kp DOT       &kp N1   &kp N2         &kp N3    &none     
                     &kp F6     &kp F7     &kp F8    &kp F9      &kp F10          &kp DOT       &kp N4   &kp N5         &kp N6    &none
                     &kp F11    &kp F12    &none     &none                                      &kp N7   &kp N8         &kp N9    &none
-                                                    &trans      &trans           &trans        &bspc_del
+                                                    &trans      &trans           &kb N0        &bspc_del
             >;
         };
         bt_layer {
