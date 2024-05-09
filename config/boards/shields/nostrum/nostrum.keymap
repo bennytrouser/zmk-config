@@ -138,7 +138,7 @@
         mtrsh: mt_rshift_space {
             compatible = "zmk,behavior-hold-tap";
             label = "RSHIFT_HOLDTAP";
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             #binding-cells = <2>;    
             tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
@@ -210,7 +210,7 @@
             label = "LBRC_LBKT";
             #binding-cells = <0>;
             bindings = <&kp LBRC>, <&kp LBKT>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
         rbrc_bkt: rbrc_bkt {
@@ -218,7 +218,7 @@
             label = "RBRC_RBKT";
             #binding-cells = <0>;
             bindings = <&kp RBRC>, <&kp RBKT>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             };
     };
 
@@ -227,9 +227,9 @@
         default_layer {
             bindings = <
                     &kp Q         &kp W         &kp F           &kp P            &kp B           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
-                    &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr RSHFT E  &hmrr LALT I  &kp O      
+                    &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr RSHFT E  &hmrr LALT I  &hmrr LGUI O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L        &sft_cap        &mtrsh RSHFT SPACE    &ltsymspc SYM_L 0
+                                                                &mo NAV_L        &kp SPACE       &sft_cap    &ltsymspc SYM_L 0
             >;
         };
         apt_layer {
