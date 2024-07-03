@@ -11,18 +11,16 @@
 
 /* Layers */
 #define DEF_L 0
-#define APT 1
-#define NAV_L 2
-#define SYM_L 3
-#define NUM_L 4
-#define BT_L 5
+#define NAV_L 1
+#define SYM_L 2
+#define NUM_L 3
+#define BT_L 4
 
 /* Shortcuts */
 #define CUT LC(X)
 #define COPY LC(C)
 #define PASTE LC(V)
 #define UNDO LC(Z)
-#define CALTD LC(LA(DELETE))
 #define SLALL LC(A)
 
 /* VS Code */
@@ -63,16 +61,16 @@
                     28  29    30  31              */
 
         /* Functions */
-        esc { timeout-ms = <20>; key-positions = <0 1>; bindings = <&kp ESC>; };                        
-        ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; };
-        tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; };
-        bdel { timeout-ms = <20>; key-positions = <7 8>; bindings = <&bspc_del>; };
+        esc { timeout-ms = <20>; key-positions = <0 1>; bindings = <&kp ESC>; layers = <DEF_L>; };                        
+        ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; layers = <DEF_L>; };
+        tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; layers = <DEF_L>; };
+        // bdel { timeout-ms = <20>; key-positions = <7 8>; bindings = <&bspc_del>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };
         // caps_word { timeout-ms = <50>; key-positions = <12 17>; bindings = <&caps_word>; layers = <DEF_L>; };
 
         /* Symbols */
-        combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L NUM_L>; };
+        combo_dash { timeout-ms = <20>; key-positions = <16 17>; bindings = <&kp MINUS>; layers = <DEF_L>; };
         combo_uscore { timeout-ms = <20>; key-positions = <6 7>; bindings = <&kp UNDER>; layers = <DEF_L>; };
         combo_lpar { timeout-ms = <20>; key-positions = <1 11>; bindings = <&kp LPAR>; layers = <DEF_L>; };
         combo_lbkt { timeout-ms = <20>; key-positions = <2 12>; bindings = <&lbrc_bkt>; layers = <DEF_L>; };
@@ -82,21 +80,21 @@
         // combo_Rbrc { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp RBRC>; layers = <DEF_L>; };
         combo_BSLH { timeout-ms = <20>; key-positions = <24 25>; bindings = <&kp BSLH>; layers = <DEF_L NUM_L>; };
         combo_FSLH { timeout-ms = <20>; key-positions = <25 26>; bindings = <&kp FSLH>; layers = <DEF_L NUM_L>; };
-        combo_LT { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LT>; layers = <DEF_L NUM_L>; };
-        combo_GT { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp GT>; layers = <DEF_L NUM_L>; };
+        combo_LT { timeout-ms = <20>; key-positions = <3 13>; bindings = <&kp LT>; layers = <DEF_L>; };
+        combo_GT { timeout-ms = <20>; key-positions = <6 16>; bindings = <&kp GT>; layers = <DEF_L>; };
         combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L NUM_L>; };
         combo_Pipe { timeout-ms = <20>; key-positions = <16 24>; bindings = <&kp PIPE>; layers = <DEF_L>; };
 
         /* Letters */
-        combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L APT>; };
+        combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
         combo_K { timeout-ms = <100>; key-positions = <4 14>; bindings = <&kp K>; layers = <DEF_L>; };
-        combo_K2 { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp K>; layers = <DEF_L>; };
+        // combo_K2 { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp K>; layers = <DEF_L>; };
         // combo_V { timeout-ms = <20>; key-positions = <1 2>; bindings = <&kp V>; layers = <DEF_L APT>; };
 
         /* Layers */
-        combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L APT>; };
+        combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L>; };
         combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L>; };
-        combo_apt { timeout-ms = <20>; key-positions = <0 9>; bindings = <&tog APT>; layers = <DEF_L APT>; };
+        // combo_apt { timeout-ms = <20>; key-positions = <0 9>; bindings = <&tog APT>; layers = <DEF_L APT>; };
             
     };
 
@@ -230,15 +228,6 @@
                     &mt SLALL A   &hmrl LALT R  &hmrl LSHFT S   &hmrl LCTRL T    &kp G           &kp M     &hmrr LCTRL N   &hmrr RSHFT E  &hmrr LALT I  &hmrr LGUI O      
                     &mt UNDO Z    &mt CUT V     &mt COPY C      &mt PASTE D                                &kp H           &comma_semi    &dot_colon    &qu_excl
                                                                 &mo NAV_L        &kp SPACE       &sft_cap    &ltsymspc SYM_L 0
-            >;
-        };
-        apt_layer {
-            label = "APT";
-            bindings = <
-                    &kp Q         &kp C         &kp G           &kp D            &kp K           &kp J     &kp L           &kp U          &kp Y         &qt_grave   
-                    &mt SLALL R   &hmrl LALT S  &hmrl LSHFT T   &hmrl LCTRL H    &kp P           &kp M     &hmrr LCTRL N   &hmrr RSHFT A  &hmrr LALT I  &kp O      
-                    &mt UNDO Z    &mt CUT B     &mt COPY W      &mt PASTE F                                &bspc_del       &comma_semi    &dot_colon    &qu_excl
-                                                                &mo NAV_L  &mtrsh LSHFT SPACE    &mt RSHFT E  &ltsymspc SYM_L 0
             >;
         };
         nav_layer {
