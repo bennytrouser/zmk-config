@@ -9,7 +9,6 @@ on:
       - "keymap_drawer.config.yaml"
       - "config/boards/shields/nostrum/*.keymap"
       - .github/workflows/draw-keymaps.yml
-      # - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
