@@ -353,5 +353,4 @@ parse_config:
       shifted: $$material:add$$
       type: sym_by_sym
   zmk_combos:
-    combo_apt: {align: top, o: 0.6}
     combo_bt: {align: top, o: 0.2}
