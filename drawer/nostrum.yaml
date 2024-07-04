@@ -1,0 +1,232 @@
+layers:
+  default:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', h: '"', s: '`', type: tap_dance}
+  - {t: A, h: Sel_ALL}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$material:shift$$'}
+  - {t: T, h: '$$material:keyboard_control_key$$'}
+  - G
+  - M
+  - {t: N, h: '$$material:keyboard_control_key$$'}
+  - {t: E, h: '$$material:shift$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: Z, h: Undo}
+  - {t: V, h: Cut}
+  - {t: C, h: Copy}
+  - {t: D, h: Paste}
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - nav
+  - $$mdi:keyboard-space$$
+  - {t: '$$material:shift$$', s: '$$material:shift_lock$$'}
+  - {t: '$$mdi:backspace-outline$$', h: sym, s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
+  nav:
+  - '1'
+  - F2
+  - F3
+  - F4
+  - F5
+  - Home
+  - $$material:move_down$$
+  - $$material:move_up$$
+  - End
+  - PG UP
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$material:shift$$
+  - $$material:keyboard_control_key$$
+  - ''
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$en
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
+  - PG DN
+  - Undo
+  - Cut
+  - Copy
+  - Paste
+  - Copy Down
+  - line select
+  - ''
+  - $$material:text_select_end$$
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
+  sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - $$material:screenshot_keyboard$$
+  - '~'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - ''
+  - $$material:keyboard_control_key$$
+  - $$material:shift$$
+  - $$mdi:apple-keyboard-option$$
+  - '`'
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
+  - ''
+  - {t: '$$material:wb_sunny$$', s: '$$material:remove$$', type: sym_by_sym}
+  - {t: '$$material:wb_sunny$$', s: '$$material:add$$', type: sym_by_sym}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - +
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - F11
+  - F12
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - {type: held}
+  - {type: held}
+  - '0'
+  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
+  bt:
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '$$material:bluetooth_connected$$', s: '0', type: sym_by_sym}
+  - {t: '$$material:bluetooth_connected$$', s: '1', type: sym_by_sym}
+  - {t: '$$material:bluetooth_connected$$', s: '2', type: sym_by_sym}
+  - {t: '$$material:bluetooth_connected$$', s: '3', type: sym_by_sym}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$material:keyboard$$', s: '$$material:cable$$', type: sym_by_sym}
+  - {t: '$$material:keyboard$$', s: '$$material:bluetooth$$', type: sym_by_sym}
+  - ''
+  - {t: '$$material:bluetooth$$', s: '$$material:disabled_by_default$$', type: sym_by_sym}
+  - {t: '$$mdi:reload$$', h: Boot}
+  - {t: '$$mdi:repeat-variant$$', h: Reset}
+  - {t: '$$mdi:repeat-variant$$', h: Reset}
+  - {t: '$$mdi:reload$$', h: Boot}
+combos:
+- p: [0, 1]
+  k: Esc
+  l: [default]
+- p: [17, 18]
+  k: $$mdi:keyboard-return$$
+  l: [default]
+- p: [11, 12]
+  k: $$mdi:keyboard-tab$$
+  l: [default]
+- p: [20, 21]
+  k: $$mdi:apple-keyboard-command$$
+  l: [default]
+- p: [5, 15]
+  k: Ctl+/
+  l: [nav]
+- p: [16, 17]
+  k: '-'
+  l: [default]
+- p: [6, 7]
+  k: _
+  l: [default]
+- p: [1, 11]
+  k: (
+  l: [default]
+- p: [2, 12]
+  k: {t: '{', s: '['}
+  l: [default]
+- p: [8, 18]
+  k: )
+  l: [default]
+- p: [7, 17]
+  k: {t: '}', s: ']'}
+  l: [default]
+- p: [24, 25]
+  k: \
+  l: [default, num]
+- p: [25, 26]
+  k: /
+  l: [default, num]
+- p: [3, 13]
+  k: <
+  l: [default]
+- p: [6, 16]
+  k: '>'
+  l: [default]
+- p: [5, 15]
+  k: '='
+  l: [default, num]
+- p: [16, 24]
+  k: '|'
+  l: [default]
+- p: [21, 22]
+  k: X
+  l: [default]
+- p: [4, 14]
+  k: K
+  l: [default]
+- p: [28, 29]
+  k: num
+  l: [default]
+- p: [0, 4]
+  k: bt
+  l: [default]
+  a: top
+  o: 0.2
