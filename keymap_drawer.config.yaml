@@ -297,7 +297,7 @@ parse_config:
       tap: $$mdi:backspace-outline$$
       shifted: $$mdi:backspace-reverse-outline$$
       type: sym_alt
-    "&ltsymspc SYM_L 0":
+    "SYM_L 0":
       tap: $$mdi:backspace-outline$$
       shifted: $$mdi:backspace-reverse-outline$$
       hold: sym
