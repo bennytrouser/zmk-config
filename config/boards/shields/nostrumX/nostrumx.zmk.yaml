@@ -1,0 +1,11 @@
+file_format: "1"
+id: nostrumx
+name: nostrumx 
+type: shield
+url: https://github.com/bennytrouser/zmk-config
+requires: [seeed_xiao]
+features:
+  - keys
+siblings:
+  - nostrum_left
+  - nostrum_right
