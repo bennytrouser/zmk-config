@@ -15,8 +15,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: nostrumx_left
+    shield: nostrumx_left rgbled_adapter
   - board: seeeduino_xiao_ble
-    shield: nostrumx_right
+    shield: nostrumx_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
