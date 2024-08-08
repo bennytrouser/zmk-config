@@ -6,7 +6,7 @@ on:
       - config/*.keymap
       - config/*.conf
       - config/includes/*.dtsi
-      - boards/*/.*
+      - boards/shields/*/*.*
       - build.yaml
       
 jobs:
