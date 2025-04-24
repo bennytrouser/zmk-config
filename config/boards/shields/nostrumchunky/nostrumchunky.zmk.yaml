@@ -1,0 +1,11 @@
+file_format: "1"
+id: nostrumchunky
+name: nostrumchunky 
+type: shield
+url: https://github.com/bennytrouser/zmk-config
+requires: [seeed_xiao]
+features:
+  - keys
+siblings:
+  - nostrumchunky_left
+  - nostrumchunky_right
