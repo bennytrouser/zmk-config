@@ -8,6 +8,7 @@ on:
       - "config/*.dtsi"
       - "keymap_drawer.config.yaml"
       - "config/boards/shields/nostrum/*.keymap"
+      - "config/boards/shields/nostrumchunky/*.keymap"
       - .github/workflows/draw-keymaps.yml
 
 jobs:
