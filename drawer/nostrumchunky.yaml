@@ -236,8 +236,8 @@ combos:
   k: ;
   l: [default, Num]
 - p: [18, 26]
-  k: {t: ., s: ':'}
-  l: [default]
+  k: ':'
+  l: [default, Num]
 - p: [21, 22]
   k: X
   l: [default]
