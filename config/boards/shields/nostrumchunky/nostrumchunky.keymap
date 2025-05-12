@@ -66,7 +66,7 @@
         ent { timeout-ms = <20>; key-positions = <17 18>; bindings = <&kp ENTER>; layers = <DEF_L>; };
         tab { timeout-ms = <20>; key-positions = <11 12>; bindings = <&kp TAB>; layers = <DEF_L>; };
         alt_tab { timeout-ms = <20>; key-positions = <1 2>; bindings = <&kp LA(TAB)>; layers = <DEF_L>; };
-        // del_word { timeout-ms = <20>; key-positions = <7 8>; bindings = <&kp LC(DEL)>; layers = <DEF_L>; };
+        del_word { timeout-ms = <20>; key-positions = <7 8>; bindings = <&kp LC(DEL)>; layers = <DEF_L>; };
         // bdel { timeout-ms = <20>; key-positions = <7 8>; bindings = <&bspc_del>; };
         win { timeout-ms = <20>; key-positions = <20 21>; bindings = <&kp LEFT_GUI>; layers = <DEF_L>; };
         line_com { timeout-ms = <50>; key-positions = <5 15>; bindings = <&kp REML>; layers = <NAV_L>; };

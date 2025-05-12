@@ -283,7 +283,7 @@ parse_config:
     LA(DOWN): $$material:move_down$$
     LA(UP): $$material:move_up$$
     LS(LA(I)): $$material:text_select_end$$
-    PSCRN: $$material:screenshot_keyboard$$
+    PSCRN: $$material:screenshot_monitor$$
     LC(Z): Undo
     LC(C): Copy
     LC(V): Paste
@@ -292,6 +292,8 @@ parse_config:
     LC(FSLH): Ctl+/
     LS(LA(DOWN)): 'Copy Down'
     LC(L): 'line select'
+    LS(LG(F23)): $$tabler:brand-openai$$
+    LC(DEL): $$mdi:backspace$$
   raw_binding_map:
     "&bspc_del":
       tap: $$mdi:backspace-outline$$
@@ -352,5 +354,8 @@ parse_config:
       tap: $$material:wb_sunny$$
       shifted: $$material:add$$
       type: sym_by_sym
+    "&ind_bat":
+      tap: $$material:battery_unknown$$
+      hold: "Check"
   zmk_combos:
     combo_bt: {align: top, o: 0.2}
