@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: nostrum}
+layout: {zmk_keyboard: nostrumchunky}
 layers:
   default:
   - Q
@@ -11,7 +11,7 @@ layers:
   - U
   - Y
   - {t: '''', h: '"', s: '`', type: tap_dance}
-  - {t: A, h: Sel_ALL}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$material:shift$$'}
   - {t: T, h: '$$material:keyboard_control_key$$'}
@@ -148,7 +148,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&ind_bat'
   - ''
   - ''
   - ''
@@ -175,11 +175,17 @@ combos:
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
   l: [default]
+- p: [1, 2]
+  k: LA(TAB)
+  l: [default]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-command$$
   l: [default]
 - p: [5, 15]
   k: Ctl+/
+  l: [Nav]
+- p: [26, 27]
+  k: LS(LG(F23))
   l: [Nav]
 - p: [16, 17]
   k: '-'
@@ -191,13 +197,19 @@ combos:
   k: (
   l: [default]
 - p: [2, 12]
-  k: {t: '{', s: '['}
+  k: '['
+  l: [default]
+- p: [3, 13]
+  k: '{'
   l: [default]
 - p: [8, 18]
   k: )
   l: [default]
 - p: [7, 17]
-  k: {t: '}', s: ']'}
+  k: ']'
+  l: [default]
+- p: [6, 16]
+  k: '}'
   l: [default]
 - p: [24, 25]
   k: \
@@ -205,10 +217,10 @@ combos:
 - p: [25, 26]
   k: /
   l: [default, Num]
-- p: [3, 13]
+- p: [13, 14]
   k: <
   l: [default]
-- p: [6, 16]
+- p: [15, 16]
   k: '>'
   l: [default]
 - p: [5, 15]
@@ -216,6 +228,12 @@ combos:
   l: [default, Num]
 - p: [16, 24]
   k: '|'
+  l: [default]
+- p: [17, 25]
+  k: ;
+  l: [default, Num]
+- p: [18, 26]
+  k: {t: ., s: ':'}
   l: [default]
 - p: [21, 22]
   k: X
