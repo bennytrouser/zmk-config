@@ -6,8 +6,8 @@ on:
       - config/*.keymap
       - config/*.conf
       - config/includes/*.dtsi
-      - boards/shields/nostrumX/**  # Matches all files in this directory and subdirectories
-      - boards/shields/nostrumchunky/**
+      - config/boards/shields/nostrumX/**  # Matches all files in this directory and subdirectories
+      - config/boards/shields/nostrumchunky/**
       - build.yaml
       
 jobs:

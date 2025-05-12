@@ -294,6 +294,7 @@ parse_config:
     LC(L): 'line select'
     LS(LG(F23)): $$tabler:brand-openai$$
     LC(DEL): $$mdi:backspace$$
+    LA(TAB): $$material:flip_to_front$$
   raw_binding_map:
     "&bspc_del":
       tap: $$mdi:backspace-outline$$
