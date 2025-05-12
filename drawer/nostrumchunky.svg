@@ -18,6 +18,9 @@
 <svg id="material:disabled_by_default">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m336-294 144-144 144 144 42-42-144-144 144-144-42-42-144 144-144-144-42 42 144 144-144 144 42 42ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm0-600v600-600Z"/></svg>
 </svg>
+<svg id="material:flip_to_front">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M345-285q-24 0-42-18t-18-42v-435q0-24 18-42t42-18h435q24 0 42 18t18 42v435q0 24-18 42t-42 18H345Zm0-60h435v-435H345v435ZM180-180v60q-24.75 0-42.37-17.63Q120-155.25 120-180h60Zm-60-105v-60h60v60h-60Zm0-165v-60h60v60h-60Zm0-165v-60h60v60h-60Zm165 495v-60h60v60h-60Zm165 0v-60h60v60h-60Zm165 0v-60h60v60h-60Z"/></svg>
+</svg>
 <svg id="material:keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M140-200q-24 0-42-18.5T80-260v-440q0-24 18-42t42-18h680q24 0 42 18t18 42v440q0 23-18 41.5T820-200H140Zm0-60h680v-440H140v440Zm160-65h360v-60H300v60Zm-97-125h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM203-575h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM140-260v-440 440Z"/></svg>
 </svg>
@@ -545,7 +548,7 @@ text.hold {
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="106" y="15" width="28" height="26" class="combo"/>
-<text x="120" y="28" class="combo tap">LA(TAB)</text>
+<use href="#material:flip_to_front" xlink:href="#material:flip_to_front" x="113" y="21" height="14" width="14.0" class="combo tap glyph material:flip_to_front"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="496" y="15" width="28" height="26" class="combo"/>
