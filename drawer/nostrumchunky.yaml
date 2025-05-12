@@ -176,7 +176,7 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [default]
 - p: [1, 2]
-  k: LA(TAB)
+  k: $$material:flip_to_front$$
   l: [default]
 - p: [7, 8]
   k: $$mdi:backspace$$
@@ -236,8 +236,8 @@ combos:
   k: ;
   l: [default, Num]
 - p: [18, 26]
-  k: {t: ., s: ':'}
-  l: [default]
+  k: ':'
+  l: [default, Num]
 - p: [21, 22]
   k: X
   l: [default]
