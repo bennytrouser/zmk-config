@@ -88,7 +88,7 @@
         combo_EQ { timeout-ms = <20>; key-positions = <5 15>; bindings = <&kp EQUAL>; layers = <DEF_L NUM_L>; };
         combo_Pipe { timeout-ms = <20>; key-positions = <16 24>; bindings = <&kp PIPE>; layers = <DEF_L>; };
         combo_semi { timeout-ms = <20>; key-positions = <17 25>; bindings = <&kp SEMI>; layers = <DEF_L NUM_L>; };
-        combo_colon { timeout-ms = <20>; key-positions = <18 26>; bindings = <&dot_colon>; layers = <DEF_L>; };
+        combo_colon { timeout-ms = <20>; key-positions = <18 26>; bindings = <&kp COLON>; layers = <DEF_L NUM_L>; };
 
         /* Letters */
         combo_X { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp X>; layers = <DEF_L>; };
