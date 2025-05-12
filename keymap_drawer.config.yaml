@@ -293,7 +293,7 @@ parse_config:
     LS(LA(DOWN)): 'Copy Down'
     LC(L): 'line select'
     LS(LG(F23)): $$tabler:brand-openai$$
-    LC(DEL): $$mdi:backspace$$
+    LC(BSPC): $$mdi:backspace$$
     LA(TAB): $$material:flip_to_front$$
   raw_binding_map:
     "&bspc_del":
