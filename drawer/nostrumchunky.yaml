@@ -75,7 +75,7 @@ layers:
   - ^
   - '&'
   - '*'
-  - $$material:screenshot_keyboard$$
+  - $$material:screenshot_monitor$$
   - '~'
   - F1
   - F2
@@ -148,7 +148,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&ind_bat'
+  - {t: '$$material:battery_unknown$$', h: Check}
   - ''
   - ''
   - ''
@@ -176,7 +176,10 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [default]
 - p: [1, 2]
-  k: LA(TAB)
+  k: $$material:flip_to_front$$
+  l: [default]
+- p: [7, 8]
+  k: $$mdi:backspace$$
   l: [default]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-command$$
@@ -185,7 +188,7 @@ combos:
   k: Ctl+/
   l: [Nav]
 - p: [26, 27]
-  k: LS(LG(F23))
+  k: $$tabler:brand-openai$$
   l: [Nav]
 - p: [16, 17]
   k: '-'
