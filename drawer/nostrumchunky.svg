@@ -3,6 +3,9 @@
 <svg id="material:add">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg>
 </svg>
+<svg id="material:battery_unknown">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M656-182q0-14 .5-27.5T664-235q10-17 25.5-29t26.5-28q3-4 7-23 0-17-13-28t-30-11q-17 0-30 11t-18 28l-44-19q10-30 35-48t57-18q37 0 64.5 24t27.5 60q0 11-3 20.5t-9 17.5q-11 16-26 28.5T710-220q-6 11-6 38h-48Zm24 102q-14 0-24-9.5T646-113q0-14 10-24t24-10q14 0 23.5 10t9.5 24q0 14-9.5 23.5T680-80Zm-340-60Zm-30 60q-12.75 0-21.37-8.63Q280-97.25 280-110v-676q0-12.75 8.63-21.38Q297.25-816 310-816h90v-64h160v64h90q12.75 0 21.38 8.62Q680-798.75 680-786v333q-16 0-31 2t-29 7v-312H340v616h152q9 17 21 32t26 28H310Z"/></svg>
+</svg>
 <svg id="material:bluetooth">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M450-94v-314L256-214l-42-42 224-224-224-224 42-42 194 194v-314h30l214 214-172 172 172 172L480-94h-30Zm60-458 100-100-100-98v198Zm0 342 100-98-100-100v198Z"/></svg>
 </svg>
@@ -30,8 +33,8 @@
 <svg id="material:remove">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-450v-60h560v60H200Z"/></svg>
 </svg>
-<svg id="material:screenshot_keyboard">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480.5-390q-37.5 0-64-26.44T390-480q0-38 26.44-64T480-570q38 0 64 26t26 63.5q0 37.5-26 64T480.5-390Zm-.5 60q63 0 106.5-43.5T630-480q0-63-43.5-106.5T480-630q-63 0-106.5 43.5T330-480q0 63 43.5 106.5T480-330ZM140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-520H140v520Zm0 0v-520 520Z"/></svg>
+<svg id="material:screenshot_monitor">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M600-320h160v-160h-40v120H600v40ZM200-560h40v-120h120v-40H200v160Zm130 440v-80H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H630v80H330ZM140-260h680v-520H140v520Zm0 0v-520 520Z"/></svg>
 </svg>
 <svg id="material:shift">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M320-120v-310H120l360-450 360 450H640v310H320Zm60-60h200v-310h133L480-786 247-490h133v310Zm100-310Z"/></svg>
@@ -63,6 +66,9 @@
 <svg id="mdi:arrow-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up" viewBox="0 0 24 24"><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" /></svg>
 </svg>
+<svg id="mdi:backspace">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
+</svg>
 <svg id="mdi:backspace-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace-outline" viewBox="0 0 24 24"><path d="M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12L19,15.59M22,3A2,2 0 0,1 24,5V19A2,2 0 0,1 22,21H7C6.31,21 5.77,20.64 5.41,20.11L0,12L5.41,3.88C5.77,3.35 6.31,3 7,3H22M22,5H7L2.28,12L7,19H22V5Z" /></svg>
 </svg>
@@ -92,6 +98,28 @@
 </svg>
 <svg id="mdi:volume-plus">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-plus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H17V8H19V11H22V13H19V16H17V13H14V11Z" /></svg>
+</svg>
+<svg id="tabler:brand-openai">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-openai"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M11.217 19.384a3.501 3.501 0 0 0 6.783 -1.217v-5.167l-6 -3.35" />
+  <path d="M5.214 15.014a3.501 3.501 0 0 0 4.446 5.266l4.34 -2.534v-6.946" />
+  <path d="M6 7.63c-1.391 -.236 -2.787 .395 -3.534 1.689a3.474 3.474 0 0 0 1.271 4.745l4.263 2.514l6 -3.348" />
+  <path d="M12.783 4.616a3.501 3.501 0 0 0 -6.783 1.217v5.067l6 3.45" />
+  <path d="M18.786 8.986a3.501 3.501 0 0 0 -4.446 -5.266l-4.34 2.534v6.946" />
+  <path d="M18 16.302c1.391 .236 2.787 -.395 3.534 -1.689a3.474 3.474 0 0 0 -1.271 -4.745l-4.308 -2.514l-5.955 3.42" />
+</svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -520,88 +548,92 @@ text.hold {
 <text x="120" y="28" class="combo tap">LA(TAB)</text>
 </g>
 <g class="combo combopos-4">
+<rect rx="6" ry="6" x="496" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="503" y="21" height="14" width="14.0" class="combo tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-5">
 <rect rx="6" ry="6" x="46" y="127" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="53" y="133" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-command"/>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="436" y="71" width="28" height="26" class="combo"/>
 <text x="450" y="84" class="combo tap">-</text>
 </g>
-<g class="combo combopos-6">
+<g class="combo combopos-7">
 <rect rx="6" ry="6" x="436" y="15" width="28" height="26" class="combo"/>
 <text x="450" y="28" class="combo tap">_</text>
 </g>
-<g class="combo combopos-7">
+<g class="combo combopos-8">
 <rect rx="6" ry="6" x="76" y="43" width="28" height="26" class="combo"/>
 <text x="90" y="56" class="combo tap">(</text>
 </g>
-<g class="combo combopos-8">
+<g class="combo combopos-9">
 <rect rx="6" ry="6" x="136" y="43" width="28" height="26" class="combo"/>
 <text x="150" y="56" class="combo tap">[</text>
 </g>
-<g class="combo combopos-9">
+<g class="combo combopos-10">
 <rect rx="6" ry="6" x="196" y="43" width="28" height="26" class="combo"/>
 <text x="210" y="56" class="combo tap">{</text>
 </g>
-<g class="combo combopos-10">
+<g class="combo combopos-11">
 <rect rx="6" ry="6" x="526" y="43" width="28" height="26" class="combo"/>
 <text x="540" y="56" class="combo tap">)</text>
 </g>
-<g class="combo combopos-11">
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="466" y="43" width="28" height="26" class="combo"/>
 <text x="480" y="56" class="combo tap">]</text>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="43" width="28" height="26" class="combo"/>
 <text x="420" y="56" class="combo tap">}</text>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="436" y="127" width="28" height="26" class="combo"/>
 <text x="450" y="140" class="combo tap">\</text>
 </g>
-<g class="combo combopos-14">
+<g class="combo combopos-15">
 <rect rx="6" ry="6" x="496" y="127" width="28" height="26" class="combo"/>
 <text x="510" y="140" class="combo tap">/</text>
 </g>
-<g class="combo combopos-15">
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="226" y="85" width="28" height="26" class="combo"/>
 <text x="240" y="98" class="combo tap">&lt;</text>
 </g>
-<g class="combo combopos-16">
+<g class="combo combopos-17">
 <rect rx="6" ry="6" x="376" y="85" width="28" height="26" class="combo"/>
 <text x="390" y="98" class="combo tap">&gt;</text>
 </g>
-<g class="combo combopos-17">
+<g class="combo combopos-18">
 <rect rx="6" ry="6" x="346" y="71" width="28" height="26" class="combo"/>
 <text x="360" y="84" class="combo tap">=</text>
 </g>
-<g class="combo combopos-18">
+<g class="combo combopos-19">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <text x="420" y="112" class="combo tap">|</text>
 </g>
-<g class="combo combopos-19">
+<g class="combo combopos-20">
 <rect rx="6" ry="6" x="466" y="99" width="28" height="26" class="combo"/>
 <text x="480" y="112" class="combo tap">;</text>
 </g>
-<g class="combo combopos-20">
+<g class="combo combopos-21">
 <rect rx="6" ry="6" x="526" y="99" width="28" height="26" class="combo"/>
 <text x="540" y="112" class="combo tap">.</text>
 <text x="540" y="101" class="combo shifted">:</text>
 </g>
-<g class="combo combopos-21">
+<g class="combo combopos-22">
 <rect rx="6" ry="6" x="106" y="127" width="28" height="26" class="combo"/>
 <text x="120" y="140" class="combo tap">X</text>
 </g>
-<g class="combo combopos-22">
+<g class="combo combopos-23">
 <rect rx="6" ry="6" x="256" y="71" width="28" height="26" class="combo"/>
 <text x="270" y="84" class="combo tap">K</text>
 </g>
-<g class="combo combopos-23">
+<g class="combo combopos-24">
 <rect rx="6" ry="6" x="226" y="183" width="28" height="26" class="combo"/>
 <a href="#Num">
 <text x="240" y="196" class="combo tap layer-activator">Num</text>
 </a></g>
-<g class="combo combopos-24">
+<g class="combo combopos-25">
 <path d="M150,-12 h-114 a6.0,6.0 0 0 0 -6.0,6.0 v16" class="combo"/>
 <path d="M150,-12 h114 a6.0,6.0 0 0 1 6.0,6.0 v44" class="combo"/>
 <rect rx="6" ry="6" x="136" y="-25" width="28" height="26" class="combo"/>
@@ -785,9 +817,7 @@ text.hold {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="556" y="127" width="28" height="26" class="combo"/>
-<text x="570" y="140" class="combo tap">
-<tspan x="570" dy="-0.6em">LS(LG(</tspan><tspan x="570" dy="1.2em">F23))</tspan>
-</text>
+<use href="#tabler:brand-openai" xlink:href="#tabler:brand-openai" x="563" y="133" height="14" width="14.0" class="combo tap glyph tabler:brand-openai"/>
 </g>
 </g>
 </g>
@@ -837,7 +867,7 @@ text.hold {
 <g transform="translate(540, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="44" height="40" class="key"/>
-<use href="#material:screenshot_keyboard" xlink:href="#material:screenshot_keyboard" x="-7" y="-11" height="14" width="14.0" class="key tap glyph material:screenshot_keyboard"/>
+<use href="#material:screenshot_monitor" xlink:href="#material:screenshot_monitor" x="-7" y="-11" height="14" width="14.0" class="key tap glyph material:screenshot_monitor"/>
 </g>
 <g transform="translate(600, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key side"/>
@@ -1204,7 +1234,8 @@ text.hold {
 <g transform="translate(360, 112)" class="key keypos-15">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="44" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 88%">&amp;ind_bat</tspan></text>
+<use href="#material:battery_unknown" xlink:href="#material:battery_unknown" x="-7" y="-11" height="14" width="14.0" class="key tap glyph material:battery_unknown"/>
+<text x="0" y="24" class="key hold">Check</text>
 </g>
 <g transform="translate(420, 84)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key side"/>
