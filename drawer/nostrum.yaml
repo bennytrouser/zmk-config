@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: nostrum}
 layers:
   default:
   - Q
@@ -28,11 +29,11 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - nav
+  - Nav
   - $$mdi:keyboard-space$$
   - {t: '$$material:shift$$', s: '$$material:shift_lock$$'}
-  - {t: '$$mdi:backspace-outline$$', h: sym, s: '$$mdi:backspace-reverse-outline$$'}
-  nav:
+  - {t: '$$mdi:backspace-outline$$', h: Sym, s: '$$mdi:backspace-reverse-outline$$'}
+  Nav:
   - '1'
   - F2
   - F3
@@ -65,7 +66,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
-  sym:
+  Sym:
   - '!'
   - '@'
   - '#'
@@ -98,7 +99,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  num:
+  Num:
   - F1
   - F2
   - F3
@@ -131,7 +132,7 @@ layers:
   - {type: held}
   - '0'
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
-  bt:
+  BT:
   - {type: held}
   - ''
   - ''
@@ -179,7 +180,7 @@ combos:
   l: [default]
 - p: [5, 15]
   k: Ctl+/
-  l: [nav]
+  l: [Nav]
 - p: [16, 17]
   k: '-'
   l: [default]
@@ -200,10 +201,10 @@ combos:
   l: [default]
 - p: [24, 25]
   k: \
-  l: [default, num]
+  l: [default, Num]
 - p: [25, 26]
   k: /
-  l: [default, num]
+  l: [default, Num]
 - p: [3, 13]
   k: <
   l: [default]
@@ -212,7 +213,7 @@ combos:
   l: [default]
 - p: [5, 15]
   k: '='
-  l: [default, num]
+  l: [default, Num]
 - p: [16, 24]
   k: '|'
   l: [default]
@@ -223,10 +224,10 @@ combos:
   k: K
   l: [default]
 - p: [28, 29]
-  k: num
+  k: Num
   l: [default]
 - p: [0, 4]
-  k: bt
+  k: BT
   l: [default]
   a: top
   o: 0.2
