@@ -29,9 +29,42 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - Nav
+  - Night
   - $$mdi:keyboard-space$$
   - {t: '$$material:shift$$', s: '$$material:shift_lock$$'}
+  - {t: '$$mdi:backspace-outline$$', h: Sym, s: '$$mdi:backspace-reverse-outline$$'}
+  Night:
+  - B
+  - F
+  - L
+  - K
+  - Q
+  - P
+  - G
+  - O
+  - U
+  - {t: '''', h: '"', s: '`', type: tap_dance}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: H, h: '$$material:shift$$'}
+  - {t: T, h: '$$material:keyboard_control_key$$'}
+  - M
+  - Y
+  - {t: C, h: '$$material:keyboard_control_key$$'}
+  - {t: A, h: '$$material:shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: Z, h: Undo}
+  - {t: C, h: Cut}
+  - {t: J, h: Copy}
+  - {t: D, h: Paste}
+  - W
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - {t: Night, type: held}
+  - $$mdi:keyboard-space$$
+  - {t: R, h: '$$material:shift$$'}
   - {t: '$$mdi:backspace-outline$$', h: Sym, s: '$$mdi:backspace-reverse-outline$$'}
   Nav:
   - '1'
@@ -58,11 +91,11 @@ layers:
   - Cut
   - Copy
   - Paste
-  - Copy Down
+  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
   - line select
   - ''
   - $$material:text_select_end$$
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
@@ -168,87 +201,93 @@ layers:
 combos:
 - p: [0, 1]
   k: Esc
-  l: [default]
+  l: [default, Nav]
 - p: [17, 18]
   k: $$mdi:keyboard-return$$
-  l: [default]
+  l: [default, Nav]
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [default]
+  l: [default, Nav]
 - p: [1, 2]
   k: $$material:flip_to_front$$
-  l: [default]
+  l: [default, Nav]
 - p: [7, 8]
   k: $$mdi:backspace$$
-  l: [default]
+  l: [default, Nav]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-command$$
-  l: [default]
+  l: [default, Nav]
+- p: [6, 8]
+  k: '&caps_word'
+  l: [default, Nav]
 - p: [5, 15]
   k: Ctl+/
-  l: [Nav]
+  l: [Night]
 - p: [26, 27]
   k: $$tabler:brand-openai$$
-  l: [Nav]
+  l: [Night]
 - p: [16, 17]
   k: '-'
-  l: [default]
+  l: [default, Nav]
 - p: [6, 7]
   k: _
-  l: [default]
+  l: [default, Nav]
 - p: [1, 11]
   k: (
-  l: [default]
+  l: [default, Nav]
 - p: [2, 12]
   k: '['
-  l: [default]
+  l: [default, Nav]
 - p: [3, 13]
   k: '{'
-  l: [default]
+  l: [default, Nav]
 - p: [8, 18]
   k: )
-  l: [default]
+  l: [default, Nav]
 - p: [7, 17]
   k: ']'
-  l: [default]
+  l: [default, Nav]
 - p: [6, 16]
   k: '}'
-  l: [default]
+  l: [default, Nav]
 - p: [24, 25]
   k: \
-  l: [default, Num]
+  l: [default, Nav, Num]
 - p: [25, 26]
   k: /
-  l: [default, Num]
+  l: [default, Nav, Num]
 - p: [13, 14]
   k: <
-  l: [default]
+  l: [default, Nav]
 - p: [15, 16]
   k: '>'
-  l: [default]
+  l: [default, Nav]
 - p: [5, 15]
   k: '='
-  l: [default, Num]
+  l: [default, Nav, Num]
 - p: [16, 24]
   k: '|'
-  l: [default]
+  l: [default, Nav]
 - p: [17, 25]
   k: ;
-  l: [default, Num]
+  l: [default, Nav, Num]
 - p: [18, 26]
   k: ':'
-  l: [default, Num]
+  l: [default, Nav, Num]
 - p: [21, 22]
   k: X
-  l: [default]
+  l: [default, Nav]
 - p: [4, 14]
   k: K
-  l: [default]
+  l: [default, Nav]
 - p: [28, 29]
   k: Num
-  l: [default]
+  l: [default, Nav]
 - p: [0, 4]
   k: BT
-  l: [default]
+  l: [default, Nav]
   a: top
   o: 0.2
+- p: [5, 9]
+  k: {t: Nav, h: '$$material:toggle_on$$'}
+  l: [default, Nav, Nav]
