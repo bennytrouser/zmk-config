@@ -12,8 +12,8 @@
 
 /* Layers */
 #define DEF_L 0
-#define NAV_L 1
-#define NIGHT_L 2
+#define NIGHT_L 1
+#define NAV_L 2
 #define SYM_L 3
 #define NUM_L 4
 #define BT_L 5
@@ -101,7 +101,7 @@
         /* Layers */
         combo_num { timeout-ms = <100>; key-positions = <28 29>; bindings = <&mo NUM_L>; layers = <DEF_L NIGHT_L>; };
         combo_bt { timeout-ms = <100>; key-positions = <0 4>; bindings = <&mo BT_L>; layers = <DEF_L NIGHT_L>; };
-        combo_night { timeout-ms = <100>; key-positions = <5 9>; bindings = <&tog NIGHT_L>; layers = <DEF_L NIGHT_L NIGHT_L>; };
+        combo_night { timeout-ms = <100>; key-positions = <5 9>; bindings = <&tog NIGHT_L>; layers = <DEF_L NIGHT_L>; };
             
     };
 
@@ -251,7 +251,7 @@
             bindings = <
                     &kp N1       &kp F2         &kp F3          &kp F4           &kp F5           &kp HOME  &kp LDWN      &kp LUP        &kp END       &kp PG_UP 
                     &kp LGUI     &kp LALT       &kp LSHFT       &kp LCTRL        &none            &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT     &kp PG_DN
-                    &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                   &bspc_del    &kp LC(L)      &none         &kp CRSRINS
+                    &kp UNDO     &kp CUT        &kp COPY        &kp PASTE                                   &bspc_del     &kp LC(L)      &none         &kp CRSRINS
                                                                 &trans           &trans           &trans    &bspc_del
             >;
         };
