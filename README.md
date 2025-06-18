@@ -1,2 +1,2 @@
 # zmk-config
-![](./drawer/nostrum.svg)
+![](./drawer/nostrumchunky.svg)
