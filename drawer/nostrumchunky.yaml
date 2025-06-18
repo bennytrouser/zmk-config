@@ -29,7 +29,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - Night
+  - Nav
   - $$mdi:keyboard-space$$
   - {t: '$$material:shift$$', s: '$$material:shift_lock$$'}
   - {t: '$$mdi:backspace-outline$$', h: Sym, s: '$$mdi:backspace-reverse-outline$$'}
@@ -62,7 +62,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: Night, type: held}
+  - Nav
   - $$mdi:keyboard-space$$
   - {t: R, h: '$$material:shift$$'}
   - {t: '$$mdi:backspace-outline$$', h: Sym, s: '$$mdi:backspace-reverse-outline$$'}
@@ -95,7 +95,7 @@ layers:
   - line select
   - ''
   - $$material:text_select_end$$
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$', type: sym_alt}
@@ -201,93 +201,93 @@ layers:
 combos:
 - p: [0, 1]
   k: Esc
-  l: [default, Nav]
+  l: [default, Night]
 - p: [17, 18]
   k: $$mdi:keyboard-return$$
-  l: [default, Nav]
+  l: [default, Night]
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [default, Nav]
+  l: [default, Night]
 - p: [1, 2]
   k: $$material:flip_to_front$$
-  l: [default, Nav]
+  l: [default, Night]
 - p: [7, 8]
   k: $$mdi:backspace$$
-  l: [default, Nav]
+  l: [default, Night]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-command$$
-  l: [default, Nav]
+  l: [default, Night]
 - p: [6, 8]
   k: '&caps_word'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [5, 15]
   k: Ctl+/
-  l: [Night]
+  l: [Nav]
 - p: [26, 27]
   k: $$tabler:brand-openai$$
-  l: [Night]
+  l: [Nav]
 - p: [16, 17]
   k: '-'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [6, 7]
   k: _
-  l: [default, Nav]
+  l: [default, Night]
 - p: [1, 11]
   k: (
-  l: [default, Nav]
+  l: [default, Night]
 - p: [2, 12]
   k: '['
-  l: [default, Nav]
+  l: [default, Night]
 - p: [3, 13]
   k: '{'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [8, 18]
   k: )
-  l: [default, Nav]
+  l: [default, Night]
 - p: [7, 17]
   k: ']'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [6, 16]
   k: '}'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [24, 25]
   k: \
-  l: [default, Nav, Num]
+  l: [default, Night, Num]
 - p: [25, 26]
   k: /
-  l: [default, Nav, Num]
+  l: [default, Night, Num]
 - p: [13, 14]
   k: <
-  l: [default, Nav]
+  l: [default, Night]
 - p: [15, 16]
   k: '>'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [5, 15]
   k: '='
-  l: [default, Nav, Num]
+  l: [default, Night, Num]
 - p: [16, 24]
   k: '|'
-  l: [default, Nav]
+  l: [default, Night]
 - p: [17, 25]
   k: ;
-  l: [default, Nav, Num]
+  l: [default, Night, Num]
 - p: [18, 26]
   k: ':'
-  l: [default, Nav, Num]
+  l: [default, Night, Num]
 - p: [21, 22]
   k: X
-  l: [default, Nav]
+  l: [default, Night]
 - p: [4, 14]
   k: K
-  l: [default, Nav]
+  l: [default, Night]
 - p: [28, 29]
   k: Num
-  l: [default, Nav]
+  l: [default, Night]
 - p: [0, 4]
   k: BT
-  l: [default, Nav]
+  l: [default, Night]
   a: top
   o: 0.2
 - p: [5, 9]
-  k: {t: Nav, h: '$$material:toggle_on$$'}
-  l: [default, Nav, Nav]
+  k: {t: Night, h: '$$material:toggle_on$$'}
+  l: [default, Night]
