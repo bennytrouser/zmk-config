@@ -360,3 +360,4 @@ parse_config:
       hold: "Check"
   zmk_combos:
     combo_bt: {align: top, o: 0.2}
+    capsword: {align: top, o: 0.2}

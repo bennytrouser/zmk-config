@@ -559,10 +559,10 @@ text.hold {
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="53" y="133" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-command"/>
 </g>
 <g class="combo combopos-6">
-<path d="M480,28 l-40,0" class="combo"/>
-<path d="M480,28 l40,0" class="combo"/>
-<rect rx="6" ry="6" x="466" y="15" width="28" height="26" class="combo"/>
-<text x="480" y="28" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<path d="M480,-12 h-54 a6.0,6.0 0 0 0 -6.0,6.0 v16" class="combo"/>
+<path d="M480,-12 h54 a6.0,6.0 0 0 1 6.0,6.0 v16" class="combo"/>
+<rect rx="6" ry="6" x="466" y="-25" width="28" height="26" class="combo"/>
+<text x="480" y="-12" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
 </g>
 <g class="combo sym_alt combopos-7">
 <rect rx="6" ry="6" x="436" y="15" width="28" height="26" class="combo sym_alt"/>

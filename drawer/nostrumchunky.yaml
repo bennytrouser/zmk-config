@@ -187,6 +187,8 @@ combos:
 - p: [6, 8]
   k: '&caps_word'
   l: [default]
+  a: top
+  o: 0.2
 - p: [5, 15]
   k: Ctl+/
   l: [Nav]
